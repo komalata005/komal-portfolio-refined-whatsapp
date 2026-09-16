@@ -1,6 +1,7 @@
 import { useLocale } from '../context/LocaleContext'
 import { useTheme } from '../context/ThemeContext'
 import LanguagePicker from './LanguagePicker'
+import AccessibilityControls from './AccessibilityControls'
 
 export default function Nav() {
   const { t } = useLocale()
@@ -32,6 +33,7 @@ export default function Nav() {
 
         <div className="nav-actions flex items-center gap-2.5">
           <LanguagePicker />
+          <AccessibilityControls />
 
           <button
             onClick={toggleTheme}
