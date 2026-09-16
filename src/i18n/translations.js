@@ -1,0 +1,253 @@
+export const translations = {
+  en: {
+    nav: { work: 'Work', process: 'Process', experience: 'Experience', system: 'System', about: 'About', contact: 'Get in touch' },
+    hero: {
+      roleTag: 'Senior UI/UX Designer',
+      headline: 'Interfaces that make hard decisions feel obvious.',
+      lede:
+        "I'm Komal, a senior UI/UX designer based in Karachi with five years spent turning user research into products people actually enjoy. I work close to engineering, because good design rarely survives in isolation from how it gets built.",
+      ctaWork: 'See selected work',
+      ctaPortfolio: 'Full portfolio ↗',
+      statusBadge: 'Open to new roles',
+      statusLine: 'Available to join immediately.',
+      factExperience: 'Experience',
+      factExperienceValue: '5 years',
+      factBased: 'Based in',
+      factBasedValue: 'Karachi, Pakistan',
+      factBackground: 'Background',
+      factBackgroundValue: 'Software Engineering, BSc',
+    },
+    work: {
+      title: 'Selected work',
+      subtitle: 'Mobile, web, and enterprise products — spanning research, flows, and high-fidelity UI.',
+      items: {
+        'Nuré': { desc: 'A mental-load reducer for couples and households. End-to-end product design — research, flows, and high-fidelity UI.', meta: 'Mobile app', tags: ['UX research', 'Product design'] },
+        'Schedule Edge': { desc: 'Redesign of an ERP system, simplifying complex workflows across multiple modules for a manufacturing business.', meta: 'Website · ERP system', tags: ['Design systems', 'Enterprise UX'] },
+        'Octofy': { desc: 'Onboarding flows and core UI design, backed by UX research and usability testing.', meta: 'Mobile app', tags: ['Onboarding', 'Usability testing'] },
+        'Carry App': { desc: "A finance app's onboarding flow, shaped by user research and careful interaction design.", meta: 'Mobile app · Finance', tags: ['Interaction design'] },
+        'Puffy': { desc: 'Responsive UI design and a component library for an e-commerce storefront.', meta: 'Website · E-commerce', tags: ['Responsive design', 'Component libraries'] },
+        'Break Smart': { desc: 'A wellness case study — wireframes, high-fidelity design, and an interactive prototype.', meta: 'Website', tags: ['Wireframing', 'Prototyping'] },
+        'Real Estate': { desc: 'A conversion-focused landing page, designed with an A/B testing rationale behind every decision.', meta: 'Website · Landing page', tags: ['Conversion design'] },
+      },
+    },
+    process: {
+      title: 'How I work',
+      subtitle: 'Same four moves on every project, mobile or enterprise.',
+      steps: [
+        { num: '01', title: 'Understand', body: 'Research and interviews to get at real frustrations, habits, and goals — not assumptions.' },
+        { num: '02', title: 'Shape the flow', body: 'Information architecture and wireframes that make the right path the obvious one.' },
+        { num: '03', title: 'Design the detail', body: 'High-fidelity UI and design systems in Figma, built to hold up across screens and states.' },
+        { num: '04', title: 'Test and hand off', body: 'Usability testing, then close collaboration with engineering so intent survives implementation.' },
+      ],
+      aiNote: 'I bring tools like Cursor, Claude, and ChatGPT into this process to synthesize research faster, rough out interactive prototypes, and stress-test copy before it ships.',
+      aiNoteLabel: 'AI-assisted along the way',
+    },
+    experience: {
+      title: 'Experience',
+      subtitle: 'Five years moving between UX practice and hands-on frontend work.',
+      careerNoteLabel: 'Currently on a career break',
+      careerNote: 'since March 2025 — spent learning and practicing design. Available to join a new team immediately.',
+      items: {
+        'Cipher Impact': {
+          role: 'UI/UX Designer',
+          bullets: [
+            'Led the redesign of an ERP product, simplifying complex workflows across multiple modules',
+            'Built and maintained a design system to keep the product consistent and speed up delivery',
+            'Designed responsive layouts with light and dark theme support for desktop and tablet',
+          ],
+        },
+        'HRSG': {
+          role: 'UI/UX Specialist',
+          bullets: [
+            'Ran user research and interviews to inform product direction and validate decisions',
+            'Designed web and mobile interfaces in Figma, from onboarding through core tasks',
+            'Produced wireframes and interactive prototypes for stakeholder review and usability testing',
+          ],
+        },
+        'Groupshop': {
+          role: 'UI Developer',
+          bullets: [
+            'Built responsive frontend interfaces using CSS, SCSS, Bootstrap, and React.js',
+            'Worked a design-to-code workflow, keeping fidelity to the design across screen sizes',
+            'Collaborated using Git in a team environment',
+          ],
+        },
+        'Botsify': {
+          role: 'Graphic Designer',
+          bullets: [
+            'Created social media graphics, website designs, and icon sets for a SaaS product',
+            'Produced prototypes and visual mockups in Figma',
+          ],
+        },
+        'PIA': {
+          role: 'Structured training',
+          bullets: ['Completed structured training on Oracle systems as part of her engineering degree'],
+        },
+      },
+    },
+    about: {
+      title: 'About',
+      p1: 'I care about understanding users — their frustrations, habits, and goals — and turning that into design that feels obvious in the best possible way. I\'m always learning, always questioning, and I bring that curiosity to every project.',
+      p2: 'Looking to join a team that takes user experience seriously and builds things worth building.',
+      eduLine: 'BSc, Software Engineering',
+      eduSchool: 'Sir Syed University of Engineering & Technology',
+      langLine: 'Languages: Urdu (fluent), English (upper-intermediate)',
+      skillGroups: [
+        { title: 'Design practice', items: ['User research', 'UX/UI design', 'Wireframing', 'Prototyping', 'Design systems', 'Responsive design', 'Illustration'] },
+        { title: 'Tools', items: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop'] },
+        { title: 'AI-assisted workflow', items: ['Cursor', 'Claude', 'ChatGPT'] },
+        { title: 'Also comfortable in code', items: ['HTML', 'CSS / SCSS', 'Bootstrap', 'Tailwind', 'React'] },
+      ],
+    },
+    system: {
+      title: 'Design system',
+      subtitle: "The tokens and components behind this page — built and documented the same way I'd hand a system to a team.",
+      color: 'Color',
+      type: 'Type',
+      buttons: 'Buttons',
+      tags: 'Tags & chips',
+      typeSamples: {
+        display: 'Aa Interfaces',
+        heading: 'Selected work',
+        body: 'I care about understanding users.',
+        label: 'Mobile app · Website · ERP',
+      },
+      primaryAction: 'Primary action',
+      secondaryAction: 'Secondary action',
+      onDark: 'On dark surface',
+    },
+    footer: {
+      heading: "Let's build something worth using.",
+      lede: 'Open to senior UI/UX roles and happy to walk through any of the work above in more depth.',
+      emailCta: 'Email Komal',
+      portfolioCta: 'Full portfolio ↗',
+      location: 'Karachi, Pakistan · +92 310 1339029',
+    },
+  },
+
+  ur: {
+    nav: { work: 'کام', process: 'طریقہ کار', experience: 'تجربہ', system: 'سسٹم', about: 'تعارف', contact: 'رابطہ کریں' },
+    hero: {
+      roleTag: 'سینئر یو آئی/یو ایکس ڈیزائنر',
+      headline: 'ایسے انٹرفیس جو مشکل فیصلوں کو آسان بنا دیں۔',
+      lede:
+        'میں کومل ہوں، کراچی میں مقیم ایک سینئر یو آئی/یو ایکس ڈیزائنر، جس نے پانچ سال یوزر ریسرچ کو ایسی پروڈکٹس میں ڈھالنے میں گزارے ہیں جنہیں لوگ واقعی استعمال کرنا پسند کریں۔ میں انجینئرنگ ٹیم کے قریب رہ کر کام کرتی ہوں، کیونکہ اچھا ڈیزائن اکیلے نہیں بنتا۔',
+      ctaWork: 'منتخب کام دیکھیں',
+      ctaPortfolio: 'مکمل پورٹ فولیو ↗',
+      statusBadge: 'نئے مواقع کے لیے دستیاب',
+      statusLine: 'فوری طور پر شامل ہونے کے لیے تیار۔',
+      factExperience: 'تجربہ',
+      factExperienceValue: '5 سال',
+      factBased: 'مقام',
+      factBasedValue: 'کراچی، پاکستان',
+      factBackground: 'تعلیمی پس منظر',
+      factBackgroundValue: 'سافٹ ویئر انجینئرنگ، بی ایس سی',
+    },
+    work: {
+      title: 'منتخب کام',
+      subtitle: 'موبائل، ویب اور انٹرپرائز پروڈکٹس — ریسرچ، فلوز اور های فیڈیلٹی یو آئی پر مشتمل۔',
+      items: {
+        'Nuré': { desc: 'جوڑوں اور گھرانوں کے لیے ذہنی بوجھ کم کرنے والی ایپ۔ مکمل پروڈکٹ ڈیزائن — ریسرچ، فلوز اور های فیڈیلٹی یو آئی۔', meta: 'موبائل ایپ', tags: ['یوزر ریسرچ', 'پروڈکٹ ڈیزائن'] },
+        'Schedule Edge': { desc: 'ایک مینوفیکچرنگ کاروبار کے لیے ای آر پی سسٹم کی نئے سرے سے ڈیزائننگ، متعدد ماڈیولز میں پیچیدہ ورک فلوز کو آسان بنانا۔', meta: 'ویب سائٹ · ای آر پی سسٹم', tags: ['ڈیزائن سسٹمز', 'انٹرپرائز یو ایکس'] },
+        'Octofy': { desc: 'یوزر ریسرچ اور یوزیبلٹی ٹیسٹنگ کی بنیاد پر آن بورڈنگ فلوز اور بنیادی یو آئی ڈیزائن۔', meta: 'موبائل ایپ', tags: ['آن بورڈنگ', 'یوزیبلٹی ٹیسٹنگ'] },
+        'Carry App': { desc: 'ایک فنانس ایپ کا آن بورڈنگ فلو، جو یوزر ریسرچ اور باریک بینی سے کیے گئے انٹرایکشن ڈیزائن سے تشکیل پایا۔', meta: 'موبائل ایپ · فنانس', tags: ['انٹرایکشن ڈیزائن'] },
+        'Puffy': { desc: 'ایک ای کامرس اسٹور کے لیے ریسپانسو یو آئی ڈیزائن اور کمپوننٹ لائبریری۔', meta: 'ویب سائٹ · ای کامرس', tags: ['ریسپانسو ڈیزائن', 'کمپوننٹ لائبریریز'] },
+        'Break Smart': { desc: 'ایک ویلنیس کیس اسٹڈی — وائرفریمز، های فیڈیلٹی ڈیزائن اور ایک انٹرایکٹو پروٹوٹائپ۔', meta: 'ویب سائٹ', tags: ['وائرفریمنگ', 'پروٹوٹائپنگ'] },
+        'Real Estate': { desc: 'ایک کنورژن پر مرکوز لینڈنگ پیج، جس کا ہر فیصلہ اے/بی ٹیسٹنگ کی بنیاد پر کیا گیا۔', meta: 'ویب سائٹ · لینڈنگ پیج', tags: ['کنورژن ڈیزائن'] },
+      },
+    },
+    process: {
+      title: 'میں کیسے کام کرتی ہوں',
+      subtitle: 'ہر پروجیکٹ میں یہی چار قدم — چاہے موبائل ہو یا انٹرپرائز۔',
+      steps: [
+        { num: '01', title: 'سمجھنا', body: 'حقیقی مشکلات، عادات اور مقاصد جاننے کے لیے ریسرچ اور انٹرویوز — قیاس آرائی نہیں۔' },
+        { num: '02', title: 'فلو کی تشکیل', body: 'انفارمیشن آرکیٹیکچر اور وائرفریمز جو صحیح راستے کو ہی واضح راستہ بنا دیں۔' },
+        { num: '03', title: 'تفصیل کا ڈیزائن', body: 'Figma میں های فیڈیلٹی یو آئی اور ڈیزائن سسٹمز، جو ہر اسکرین اور حالت میں قائم رہیں۔' },
+        { num: '04', title: 'جانچ اور حوالگی', body: 'یوزیبلٹی ٹیسٹنگ، پھر انجینئرنگ کے ساتھ قریبی تعاون تاکہ نیت عملدرآمد میں برقرار رہے۔' },
+      ],
+      aiNoteLabel: 'اے آئی کی مدد بھی شامل',
+      aiNote: 'میں اس عمل میں Cursor، Claude اور ChatGPT جیسے ٹولز استعمال کرتی ہوں تاکہ ریسرچ جلدی سمجھ سکوں، پروٹوٹائپس تیزی سے بنا سکوں اور کاپی کو لانچ سے پہلے پرکھ سکوں۔',
+    },
+    experience: {
+      title: 'تجربہ',
+      subtitle: 'پانچ سال یو ایکس پریکٹس اور عملی فرنٹ اینڈ کام کے درمیان۔',
+      careerNoteLabel: 'فی الحال کیریئر بریک پر',
+      careerNote: 'مارچ 2025 سے — سیکھنے اور ڈیزائن کی مشق میں مصروف۔ فوری طور پر نئی ٹیم جوائن کرنے کے لیے تیار۔',
+      items: {
+        'Cipher Impact': {
+          role: 'یو آئی/یو ایکس ڈیزائنر',
+          bullets: [
+            'ایک ای آر پی پروڈکٹ کی نئے سرے سے ڈیزائننگ کی قیادت کی، متعدد ماڈیولز میں پیچیدہ ورک فلوز کو آسان بنایا',
+            'مصنوعات کو یکساں رکھنے اور ڈیلیوری تیز کرنے کے لیے ڈیزائن سسٹم بنایا اور برقرار رکھا',
+            'ڈیسک ٹاپ اور ٹیبلٹ کے لیے لائٹ اور ڈارک تھیم کے ساتھ ریسپانسو لے آؤٹ ڈیزائن کیے',
+          ],
+        },
+        'HRSG': {
+          role: 'یو آئی/یو ایکس اسپیشلسٹ',
+          bullets: [
+            'پروڈکٹ کی سمت طے کرنے اور فیصلوں کی تصدیق کے لیے یوزر ریسرچ اور انٹرویوز کیے',
+            'Figma میں ویب اور موبائل انٹرفیس ڈیزائن کیے، آن بورڈنگ سے لے کر بنیادی کاموں تک',
+            'اسٹیک ہولڈر ریویو اور یوزیبلٹی ٹیسٹنگ کے لیے وائرفریمز اور انٹرایکٹو پروٹوٹائپس تیار کیے',
+          ],
+        },
+        'Groupshop': {
+          role: 'یو آئی ڈیویلپر',
+          bullets: [
+            'CSS، SCSS، Bootstrap اور React.js کا استعمال کرتے ہوئے ریسپانسو فرنٹ اینڈ انٹرفیس بنائے',
+            'ڈیزائن سے کوڈ کے ورک فلو پر کام کیا، تمام اسکرین سائزز میں ڈیزائن کی وفاداری برقرار رکھی',
+            'ایک ٹیم کے ماحول میں Git کا استعمال کرتے ہوئے تعاون کیا',
+          ],
+        },
+        'Botsify': {
+          role: 'گرافک ڈیزائنر',
+          bullets: [
+            'ایک SaaS پروڈکٹ کے لیے سوشل میڈیا گرافکس، ویب سائٹ ڈیزائنز اور آئیکن سیٹس بنائے',
+            'Figma میں پروٹوٹائپس اور ویژول موک اپس تیار کیے',
+          ],
+        },
+        'PIA': {
+          role: 'باقاعدہ تربیت',
+          bullets: ['اپنی انجینئرنگ ڈگری کے حصے کے طور پر Oracle سسٹمز پر باقاعدہ تربیت مکمل کی'],
+        },
+      },
+    },
+    about: {
+      title: 'تعارف',
+      p1: 'مجھے یوزرز کو سمجھنے کی فکر رہتی ہے — ان کی مشکلات، عادات اور مقاصد — اور اسے ایسے ڈیزائن میں بدلنا جو بہترین انداز میں واضح محسوس ہو۔ میں ہمیشہ سیکھتی رہتی ہوں، سوال کرتی رہتی ہوں، اور یہی تجسس ہر پروجیکٹ میں لاتی ہوں۔',
+      p2: 'ایسی ٹیم تلاش کر رہی ہوں جو یوزر ایکسپیرینس کو سنجیدگی سے لے اور واقعی قابلِ قدر چیزیں بنائے۔',
+      eduLine: 'بی ایس سی، سافٹ ویئر انجینئرنگ',
+      eduSchool: 'سر سید یونیورسٹی آف انجینئرنگ اینڈ ٹیکنالوجی',
+      langLine: 'زبانیں: اردو (روانی سے)، انگریزی (اپر انٹرمیڈیٹ)',
+      skillGroups: [
+        { title: 'ڈیزائن پریکٹس', items: ['یوزر ریسرچ', 'یو ایکس/یو آئی ڈیزائن', 'وائرفریمنگ', 'پروٹوٹائپنگ', 'ڈیزائن سسٹمز', 'ریسپانسو ڈیزائن', 'الیسٹریشن'] },
+        { title: 'ٹولز', items: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop'] },
+        { title: 'اے آئی سے مدد یافتہ ورک فلو', items: ['Cursor', 'Claude', 'ChatGPT'] },
+        { title: 'کوڈنگ میں بھی مہارت', items: ['HTML', 'CSS / SCSS', 'Bootstrap', 'Tailwind', 'React'] },
+      ],
+    },
+    system: {
+      title: 'ڈیزائن سسٹم',
+      subtitle: 'اس صفحے کے پیچھے موجود ٹوکنز اور کمپوننٹس — بالکل اسی طرح بنائے اور دستاویزی کیے گئے جیسے کسی ٹیم کو سونپے جاتے ہیں۔',
+      color: 'رنگ',
+      type: 'ٹائپ',
+      buttons: 'بٹنز',
+      tags: 'ٹیگز اور چپس',
+      typeSamples: {
+        display: 'Aa Interfaces',
+        heading: 'منتخب کام',
+        body: 'مجھے یوزرز کو سمجھنے کی فکر رہتی ہے۔',
+        label: 'موبائل ایپ · ویب سائٹ · ای آر پی',
+      },
+      primaryAction: 'بنیادی عمل',
+      secondaryAction: 'ثانوی عمل',
+      onDark: 'گہری سطح پر',
+    },
+    footer: {
+      heading: 'آئیے کچھ ایسا بنائیں جو استعمال کے قابل ہو۔',
+      lede: 'سینئر یو آئی/یو ایکس کرداروں کے لیے دستیاب ہوں اور اوپر دیے گئے کسی بھی کام پر تفصیل سے بات کرنے میں خوشی ہوگی۔',
+      emailCta: 'کومل کو ای میل کریں',
+      portfolioCta: 'مکمل پورٹ فولیو ↗',
+      location: 'کراچی، پاکستان · +92 310 1339029',
+    },
+  },
+}
