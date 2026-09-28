@@ -21,6 +21,7 @@ export default function Work() {
 
         <div ref={gridRef} className="skew-on-scroll grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => {
+            const projectName = p.displayName || p.name
             const baseItem = t.work.items[p.name] || { desc: p.desc, meta: p.meta, tags: p.tags }
             const item = {
               ...baseItem,
@@ -28,16 +29,29 @@ export default function Work() {
             }
             return (
               <Reveal key={p.name} delay={(i % 3) * 90} className="flex flex-col">
-                <a href={p.figmaUrl} target="_blank" rel="noopener noreferrer" className="mb-5 block" aria-label={`Open ${p.name} in Figma`}><TiltCard><div
-                  className={`relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-md bg-gradient-to-br p-4 ${p.gradient}`}
+                <a href={p.figmaUrl} target="_blank" rel="noopener noreferrer" className="group mb-5 block" aria-label={`Open ${projectName} in Figma`}><TiltCard><div
+                  className={`relative flex ${p.image ? 'aspect-[8/5]' : 'aspect-[4/3] p-4'} items-center justify-center overflow-hidden rounded-md bg-gradient-to-br ${p.gradient}`}
                 >
-                  <ProjectVisual kind={p.kind} />
-                  <span className="absolute right-3.5 top-3 rounded-full border border-white/35 px-2.5 py-1 text-[0.68rem] tracking-wide text-white/80">
-                    {item.meta.split(' · ')[0]}
-                  </span>
+                  {p.image ? (
+                    <img
+                      src={p.image}
+                      alt={`${projectName} project overview`}
+                      width="1600"
+                      height="1000"
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.015]"
+                    />
+                  ) : (
+                    <>
+                      <ProjectVisual kind={p.kind} />
+                      <span className="absolute right-3.5 top-3 rounded-full border border-white/35 px-2.5 py-1 text-[0.68rem] tracking-wide text-white/80">
+                        {item.meta.split(' · ')[0]}
+                      </span>
+                    </>
+                  )}
                 </div></TiltCard></a>
                 <div className="flex flex-col gap-2">
-                  <h3 className="font-serif text-xl dark:text-[#F6F2FC]"><a href={p.figmaUrl} target="_blank" rel="noopener noreferrer" className="hover:text-violet dark:hover:text-lilac">{p.name} ↗</a></h3>
+                  <h3 className="font-serif text-xl dark:text-[#F6F2FC]"><a href={p.figmaUrl} target="_blank" rel="noopener noreferrer" className="hover:text-violet dark:hover:text-lilac">{projectName} ↗</a></h3>
                   <p className="text-[0.94rem] text-inkSoft dark:text-[#C8BFE3]">{item.desc}</p>
                   <div className="text-[0.82rem] text-inkSoft dark:text-[#9C90BC]">{item.meta}</div>
                   <div className="mt-0.5 flex flex-wrap gap-2">
