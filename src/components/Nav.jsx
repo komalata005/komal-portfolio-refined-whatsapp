@@ -8,15 +8,15 @@ export default function Nav() {
   const { theme, toggleTheme } = useTheme()
 
   const links = [
-    { href: '#work', label: t.nav.work },
-    { href: '#process', label: t.nav.process },
-    { href: '#experience', label: t.nav.experience },
+    { href: '/#work', label: t.nav.work },
+    { href: '/#process', label: t.nav.process },
+    { href: '/#experience', label: t.nav.experience },
   ]
 
   return (
     <header className="sticky top-0 z-20 border-b border-mistLine bg-paper/85 backdrop-blur-md transition-colors dark:border-white/10 dark:bg-midnight/85">
       <div className="mx-auto flex max-w-content items-center justify-between px-8 py-5">
-        <span className="font-script text-3xl leading-none pb-1 text-violet dark:text-lilac">Komal Ata</span>
+        <a href="/" className="font-script text-3xl leading-none pb-1 text-violet dark:text-lilac">Komal Ata</a>
 
         <ul className="hidden gap-9 md:flex">
           {links.map((l) => (

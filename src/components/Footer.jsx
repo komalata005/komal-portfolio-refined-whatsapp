@@ -1,8 +1,10 @@
 import { useLocale } from '../context/LocaleContext'
 import Magnetic from './Magnetic'
+import { useEmailDialog } from './EmailPopup'
 
 export default function Footer() {
   const { t } = useLocale()
+  const { openEmail } = useEmailDialog()
 
   return (
     <footer id="contact" className="bg-gradient-to-br from-midnight to-midnight2 px-8 pb-10 pt-24 text-[#EDE7F8]">
@@ -11,7 +13,9 @@ export default function Footer() {
         <p className="mt-4 max-w-[50ch] text-[1.05rem] text-[#C8BFE3]">{t.footer.lede}</p>
         <div className="mt-9 flex flex-wrap gap-3.5">
           <Magnetic
-            href="mailto:komal.ata005@gmail.com"
+            as="button"
+            type="button"
+            onClick={openEmail}
             strength={10}
             className="rounded-[3px] border border-lilac bg-lilac px-6 py-3 text-[0.95rem] font-medium text-midnight"
           >

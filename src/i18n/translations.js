@@ -3,7 +3,8 @@ export const translations = {
     nav: { work: 'Work', process: 'Process', experience: 'Experience', system: 'System', about: 'About', contact: 'Get in touch' },
     hero: {
       roleTag: 'Senior UI/UX Designer',
-      headline: 'Interfaces that make hard decisions feel obvious.',
+      headline: 'Creating designs people love to use.',
+      ctaTalk: "Let's talk",
       lede:
         "I'm Komal, a senior UI/UX designer based in Karachi with five years spent turning user research into products people actually enjoy. I work close to engineering, because good design rarely survives in isolation from how it gets built.",
       ctaWork: 'See selected work',
@@ -20,6 +21,8 @@ export const translations = {
     work: {
       title: 'Selected work',
       subtitle: 'Mobile, web, and enterprise products — spanning research, flows, and high-fidelity UI.',
+      caseCta: 'View case study',
+      figmaCta: 'Figma file',
       items: {
         'Nuré': { desc: 'A mental-load reducer for couples and households. End-to-end product design — research, flows, and high-fidelity UI.', meta: 'Mobile app', tags: ['UX research', 'Product design'] },
         'Schedule Edge': { desc: 'Redesign of an ERP system, simplifying complex workflows across multiple modules for a manufacturing business.', meta: 'Website · ERP system', tags: ['Design systems', 'Enterprise UX'] },
@@ -129,7 +132,8 @@ export const translations = {
     nav: { work: 'کام', process: 'طریقہ کار', experience: 'تجربہ', system: 'سسٹم', about: 'تعارف', contact: 'رابطہ کریں' },
     hero: {
       roleTag: 'سینئر یو آئی/یو ایکس ڈیزائنر',
-      headline: 'ایسے انٹرفیس جو مشکل فیصلوں کو آسان بنا دیں۔',
+      headline: 'ایسے ڈیزائن بناتی ہوں جنہیں لوگ استعمال کرنا پسند کریں۔',
+      ctaTalk: 'بات کریں',
       lede:
         'میں کومل ہوں، کراچی میں مقیم ایک سینئر یو آئی/یو ایکس ڈیزائنر، جس نے پانچ سال یوزر ریسرچ کو ایسی پروڈکٹس میں ڈھالنے میں گزارے ہیں جنہیں لوگ واقعی استعمال کرنا پسند کریں۔ میں انجینئرنگ ٹیم کے قریب رہ کر کام کرتی ہوں، کیونکہ اچھا ڈیزائن اکیلے نہیں بنتا۔',
       ctaWork: 'منتخب کام دیکھیں',
@@ -146,6 +150,8 @@ export const translations = {
     work: {
       title: 'منتخب کام',
       subtitle: 'موبائل، ویب اور انٹرپرائز پروڈکٹس — ریسرچ، فلوز اور های فیڈیلٹی یو آئی پر مشتمل۔',
+      caseCta: 'کیس اسٹڈی دیکھیں',
+      figmaCta: 'Figma فائل',
       items: {
         'Nuré': { desc: 'جوڑوں اور گھرانوں کے لیے ذہنی بوجھ کم کرنے والی ایپ۔ مکمل پروڈکٹ ڈیزائن — ریسرچ، فلوز اور های فیڈیلٹی یو آئی۔', meta: 'موبائل ایپ', tags: ['یوزر ریسرچ', 'پروڈکٹ ڈیزائن'] },
         'Schedule Edge': { desc: 'ایک مینوفیکچرنگ کاروبار کے لیے ای آر پی سسٹم کی نئے سرے سے ڈیزائننگ، متعدد ماڈیولز میں پیچیدہ ورک فلوز کو آسان بنانا۔', meta: 'ویب سائٹ · ای آر پی سسٹم', tags: ['ڈیزائن سسٹمز', 'انٹرپرائز یو ایکس'] },

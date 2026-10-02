@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useLocale } from '../context/LocaleContext'
+import { useEmailDialog } from './EmailPopup'
 import Magnetic from './Magnetic'
 import Counter from './Counter'
 import useParallax from '../hooks/useParallax'
@@ -7,6 +8,7 @@ import GradientBackdrop from './GradientBackdrop'
 
 export default function Hero() {
   const { t } = useLocale()
+  const { openEmail } = useEmailDialog()
   const [revealed, setRevealed] = useState(false)
   const [typedHeadline, setTypedHeadline] = useState('')
   const cardParallax = useParallax(0.06)
@@ -47,7 +49,7 @@ export default function Hero() {
           </div>
 
           <h1
-            className={`max-w-[16ch] font-serif text-[2.4rem] leading-[1.06] tracking-[-0.5px] md:text-[4.1rem] dark:text-[#F6F2FC]`}
+            className="max-w-[12ch] font-serif text-[2.35rem] leading-[1.02] tracking-[-0.5px] md:max-w-[16ch] md:text-[3.6rem] dark:text-[#F6F2FC]"
             style={{ animationDelay: '50ms' }}
           >
             {typedHeadline}<span className="typing-caret" aria-hidden="true">|</span>
@@ -65,14 +67,13 @@ export default function Hero() {
             >
               {t.hero.ctaWork}
             </Magnetic>
-            <a
-              href="https://komalata01.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={openEmail}
               className="inline-flex items-center gap-2 rounded-[3px] border border-mistLine px-6 py-3 text-[0.95rem] font-medium text-ink transition-colors hover:border-violet hover:text-violet dark:border-white/15 dark:text-[#EDE7F8] dark:hover:border-lilac dark:hover:text-lilac"
             >
-              {t.hero.ctaPortfolio}
-            </a>
+              {t.hero.ctaTalk || "Let's talk"}
+            </button>
           </div>
         </div>
 
