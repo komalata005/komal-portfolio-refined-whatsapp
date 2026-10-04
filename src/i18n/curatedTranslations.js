@@ -30,7 +30,7 @@ export const translations = {
       title: 'How I work',
       subtitle: 'Same four moves on every project, mobile or enterprise.',
       steps: [
-        { num: '01', title: 'Understand', body: 'Research and interviews to get at real frustrations, habits, and goals — not assumptions.' },
+        { num: '01', title: 'Understand', body: 'Research and interviews that uncover real habits and goals, not assumptions.' },
         { num: '02', title: 'Shape the flow', body: 'Information architecture and wireframes that make the right path the obvious one.' },
         { num: '03', title: 'Design the detail', body: 'High-fidelity UI and design systems in Figma, built to hold up across screens and states.' },
         { num: '04', title: 'Test and hand off', body: 'Usability testing, then close collaboration with engineering so intent survives implementation.' },
@@ -53,7 +53,7 @@ export const translations = {
     },
     about: {
       title: 'About',
-      p1: "I care about understanding users — their frustrations, habits, and goals — and turning that into design that feels obvious in the best possible way. I'm always learning, always questioning, and I bring that curiosity to every project.",
+      p1: "I care about understanding what people need and turning that into design that feels clear and natural. I keep learning, keep asking questions, and bring that curiosity into every project.",
       p2: 'Looking to join a team that takes user experience seriously and builds things worth building.',
       eduLine: 'BSc, Software Engineering', eduSchool: 'Sir Syed University of Engineering & Technology',
       langLine: 'Languages: Urdu (fluent), English (upper-intermediate)',

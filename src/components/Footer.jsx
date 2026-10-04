@@ -17,7 +17,7 @@ export default function Footer() {
             type="button"
             onClick={openEmail}
             strength={10}
-            className="rounded-[3px] border border-lilac bg-lilac px-6 py-3 text-[0.95rem] font-medium text-midnight"
+            className="rounded-full border border-lilac bg-lilac px-6 py-3 text-[0.95rem] font-medium text-midnight"
           >
             {t.footer.emailCta}
           </Magnetic>
@@ -25,7 +25,7 @@ export default function Footer() {
             href="https://wa.me/923101339029"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-[3px] border border-white/25 px-6 py-3 text-[0.95rem] font-medium text-[#EDE7F8] transition-colors hover:border-white/50"
+            className="rounded-full border border-white/25 px-6 py-3 text-[0.95rem] font-medium text-[#EDE7F8] transition-colors hover:border-white/50"
           >
             WhatsApp Komal ↗
           </a>

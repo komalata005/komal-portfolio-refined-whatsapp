@@ -9,14 +9,15 @@ export default function Nav() {
 
   const links = [
     { href: '/#work', label: t.nav.work },
+    { href: '/#about', label: t.nav.about },
     { href: '/#process', label: t.nav.process },
     { href: '/#experience', label: t.nav.experience },
   ]
 
   return (
     <header className="sticky top-0 z-20 border-b border-mistLine bg-paper/85 backdrop-blur-md transition-colors dark:border-white/10 dark:bg-midnight/85">
-      <div className="mx-auto flex max-w-content items-center justify-between px-8 py-5">
-        <a href="/" className="font-script text-3xl leading-none pb-1 text-violet dark:text-lilac">Komal Ata</a>
+      <div className="mx-auto flex max-w-content items-center justify-between px-8 py-3">
+        <a href="/" className="font-script text-[1.85rem] leading-none text-violet dark:text-lilac">Komal Ata</a>
 
         <ul className="hidden gap-9 md:flex">
           {links.map((l) => (
@@ -38,7 +39,7 @@ export default function Nav() {
           <button
             onClick={toggleTheme}
             aria-label="Toggle dark mode"
-            className="grid h-9 w-9 place-items-center rounded-[3px] border border-mistLine text-ink transition-colors hover:border-violet hover:text-violet dark:border-white/15 dark:text-[#EDE7F8] dark:hover:border-lilac dark:hover:text-lilac"
+            className="grid h-9 w-9 place-items-center rounded-full border border-mistLine text-ink transition-colors hover:border-violet hover:text-violet dark:border-white/15 dark:text-[#EDE7F8] dark:hover:border-lilac dark:hover:text-lilac"
           >
             {theme === 'dark' ? (
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -51,15 +52,6 @@ export default function Nav() {
               </svg>
             )}
           </button>
-
-          <a
-            href="https://wa.me/923101339029"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden rounded-[3px] border border-mistLine px-5 py-2.5 text-[0.95rem] text-ink transition-colors hover:border-violet hover:text-violet sm:inline-block dark:border-white/15 dark:text-[#EDE7F8] dark:hover:border-lilac dark:hover:text-lilac"
-          >
-            WhatsApp ↗
-          </a>
         </div>
       </div>
     </header>

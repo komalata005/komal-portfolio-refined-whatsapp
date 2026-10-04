@@ -3,8 +3,8 @@ import Hero from './components/Hero'
 import Work from './components/Work'
 import Process from './components/Process'
 import Experience from './components/Experience'
+import About from './components/About'
 import Footer from './components/Footer'
-import CustomCursor from './components/CustomCursor'
 import ScrollProgress from './components/ScrollProgress'
 import CaseStudy from './components/CaseStudy'
 import { ThemeProvider } from './context/ThemeContext'
@@ -19,6 +19,7 @@ function Home() {
       <main>
         <Hero />
         <Work />
+        <About />
         <Process />
         <Experience />
       </main>
@@ -37,7 +38,6 @@ export default function App() {
         <EmailDialogProvider>
         <div className="min-h-screen bg-paper text-ink transition-colors duration-300 dark:bg-midnight dark:text-[#EDE7F8]">
           <ScrollProgress />
-          <CustomCursor />
           <WhatsAppChat />
           {match ? <CaseStudy slug={decodeURIComponent(match[1])} /> : <Home />}
         </div>

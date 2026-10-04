@@ -1,18 +1,22 @@
 import Reveal from './Reveal'
+import SectionDivider from './SectionDivider'
 import { useLocale } from '../context/LocaleContext'
 
 export default function About() {
   const { t } = useLocale()
 
   return (
-    <section id="about" className="border-t border-mistLine py-22 transition-colors dark:border-white/10 md:py-24">
-      <div className="mx-auto grid max-w-content grid-cols-1 gap-9 px-8 md:grid-cols-[1.1fr_1fr] md:gap-16">
+    <section id="about" className="py-22 transition-colors md:py-24">
+      <SectionDivider label="About" />
+      <div className="mx-auto mt-10 grid max-w-content grid-cols-1 gap-9 px-8 md:grid-cols-[1.1fr_1fr] md:gap-16">
         <Reveal>
           <h2 className="mb-5 font-serif text-[2rem] dark:text-[#F6F2FC]">{t.about.title}</h2>
           <p className="max-w-[56ch] text-inkSoft dark:text-[#C8BFE3]">{t.about.p1}</p>
           <p className="mt-4 max-w-[56ch] text-inkSoft dark:text-[#C8BFE3]">{t.about.p2}</p>
-          <div className="mt-6 border-t border-mistLine pt-5 text-[0.92rem] text-inkSoft dark:border-white/10 dark:text-[#C8BFE3]">
-            <span className="font-medium text-ink dark:text-[#F6F2FC]">{t.about.eduLine}</span> — {t.about.eduSchool}
+          <div className="mt-6 border-t border-[#E4D8F6] pt-5 text-[0.92rem] text-inkSoft dark:border-lilac/25 dark:text-[#C8BFE3]">
+            <span className="font-medium text-ink dark:text-[#F6F2FC]">{t.about.eduLine}</span>
+            <span className="mx-1.5 text-mist">·</span>
+            {t.about.eduSchool}
             <br />
             {t.about.langLine}
           </div>

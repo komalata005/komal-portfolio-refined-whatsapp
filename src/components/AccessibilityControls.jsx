@@ -44,7 +44,7 @@ export default function AccessibilityControls() {
         aria-label="Open accessibility options"
         aria-expanded={open}
         aria-controls="accessibility-menu"
-        className="grid h-9 w-9 place-items-center rounded-[3px] border border-mistLine text-ink transition-colors hover:border-violet hover:text-violet focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet dark:border-white/15 dark:text-[#EDE7F8] dark:hover:border-lilac dark:hover:text-lilac"
+        className="grid h-9 w-9 place-items-center rounded-full border border-mistLine text-ink transition-colors hover:border-violet hover:text-violet focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet dark:border-white/15 dark:text-[#EDE7F8] dark:hover:border-lilac dark:hover:text-lilac"
       >
         <svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="4.5" r="2" />

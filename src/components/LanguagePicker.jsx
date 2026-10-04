@@ -45,7 +45,7 @@ export default function LanguagePicker() {
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label="Choose language"
-        className="flex items-center gap-1.5 rounded-[3px] border border-mistLine px-3 py-2 text-[0.82rem] font-medium text-ink transition-colors hover:border-violet hover:text-violet dark:border-white/15 dark:text-[#EDE7F8] dark:hover:border-lilac dark:hover:text-lilac"
+        className="flex items-center gap-1.5 rounded-full border border-mistLine px-3 py-2 text-[0.82rem] font-medium text-ink transition-colors hover:border-violet hover:text-violet dark:border-white/15 dark:text-[#EDE7F8] dark:hover:border-lilac dark:hover:text-lilac"
       >
         {loading ? (
           <span className="h-3 w-3 animate-spin rounded-full border border-current border-t-transparent" />

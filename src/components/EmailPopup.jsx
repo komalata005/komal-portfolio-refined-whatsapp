@@ -68,13 +68,13 @@ export default function EmailPopup({ open, onClose }) {
           <button
             type="button"
             onClick={copy}
-            className="rounded-[3px] border border-violet bg-violet px-5 py-2.5 text-sm font-medium text-white transition hover:bg-violetDeep"
+            className="rounded-full border border-violet bg-violet px-5 py-2.5 text-sm font-medium text-white transition hover:bg-violetDeep"
           >
             {copied ? 'Copied' : 'Copy email'}
           </button>
           <a
             href={`mailto:${EMAIL}`}
-            className="inline-flex items-center rounded-[3px] border border-mistLine px-5 py-2.5 text-sm font-medium text-ink transition hover:border-violet dark:border-white/15 dark:text-[#EDE7F8]"
+            className="inline-flex items-center rounded-full border border-mistLine px-5 py-2.5 text-sm font-medium text-ink transition hover:border-violet dark:border-white/15 dark:text-[#EDE7F8]"
           >
             Open mail
           </a>

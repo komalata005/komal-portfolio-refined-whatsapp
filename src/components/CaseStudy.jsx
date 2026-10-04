@@ -44,7 +44,7 @@ export default function CaseStudy({ slug }) {
         <main className="mx-auto max-w-content px-8 py-32">
           <p className="mb-4 text-sm uppercase tracking-[0.2em] text-violet">404</p>
           <h1 className="font-serif text-4xl dark:text-[#F6F2FC]">{ui.missing}</h1>
-          <a href="/" className="mt-8 inline-flex rounded-[3px] bg-violet px-5 py-3 text-sm text-white">
+          <a href="/" className="mt-8 inline-flex rounded-full bg-violet px-5 py-3 text-sm text-white">
             {ui.home}
           </a>
         </main>
@@ -84,13 +84,13 @@ export default function CaseStudy({ slug }) {
                   href={project.figmaUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-[3px] border border-violet bg-violet px-5 py-3 text-sm font-medium text-white transition hover:bg-violetDeep"
+                  className="inline-flex items-center rounded-full border border-violet bg-violet px-5 py-3 text-sm font-medium text-white transition hover:bg-violetDeep"
                 >
                   {ui.figma} ↗
                 </a>
                 <a
                   href="/#work"
-                  className="inline-flex items-center rounded-[3px] border border-mistLine bg-white/70 px-5 py-3 text-sm font-medium text-ink transition hover:border-violet dark:border-white/15 dark:bg-white/5 dark:text-[#EDE7F8]"
+                  className="inline-flex items-center rounded-full border border-mistLine bg-white/70 px-5 py-3 text-sm font-medium text-ink transition hover:border-violet dark:border-white/15 dark:bg-white/5 dark:text-[#EDE7F8]"
                 >
                   {ui.all}
                 </a>
@@ -240,7 +240,7 @@ export default function CaseStudy({ slug }) {
               href={project.figmaUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex rounded-[3px] bg-violet px-6 py-3 text-sm font-medium text-white transition hover:bg-violetDeep"
+              className="mt-8 inline-flex rounded-full bg-violet px-6 py-3 text-sm font-medium text-white transition hover:bg-violetDeep"
             >
               {ui.figma} ↗
             </a>

@@ -61,15 +61,15 @@ export default function DesignSystem() {
         <Reveal delay={200} className="mb-14">
           <h3 className="mb-5 text-sm font-semibold text-inkSoft dark:text-[#C8BFE3]">{s.buttons}</h3>
           <div className="flex flex-wrap items-center gap-4">
-            <button className="rounded-[3px] border border-violet bg-violet px-6 py-3 text-[0.95rem] font-medium text-paper transition-transform hover:-translate-y-px hover:bg-violetDeep">
+            <button className="rounded-full border border-violet bg-violet px-6 py-3 text-[0.95rem] font-medium text-paper transition-transform hover:-translate-y-px hover:bg-violetDeep">
               {s.primaryAction}
             </button>
-            <button className="rounded-[3px] border border-mistLine px-6 py-3 text-[0.95rem] font-medium text-ink transition-colors hover:border-violet hover:text-violet dark:border-white/15 dark:text-[#EDE7F8] dark:hover:border-lilac dark:hover:text-lilac">
+            <button className="rounded-full border border-mistLine px-6 py-3 text-[0.95rem] font-medium text-ink transition-colors hover:border-violet hover:text-violet dark:border-white/15 dark:text-[#EDE7F8] dark:hover:border-lilac dark:hover:text-lilac">
               {s.secondaryAction}
             </button>
           </div>
           <div className="mt-3.5 flex items-center gap-4 rounded-md bg-midnight p-5">
-            <button className="rounded-[3px] border border-lilac bg-lilac px-6 py-3 text-[0.95rem] font-medium text-midnight transition-colors hover:bg-[#B8A4E8]">
+            <button className="rounded-full border border-lilac bg-lilac px-6 py-3 text-[0.95rem] font-medium text-midnight transition-colors hover:bg-[#B8A4E8]">
               {s.onDark}
             </button>
           </div>
