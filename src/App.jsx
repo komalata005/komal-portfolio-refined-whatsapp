@@ -36,7 +36,7 @@ export default function App() {
     <ThemeProvider>
       <LocaleProvider>
         <EmailDialogProvider>
-        <div className="min-h-screen bg-paper text-ink transition-colors duration-300 dark:bg-midnight dark:text-[#EDE7F8]">
+        <div className="min-h-screen bg-paper bg-[radial-gradient(ellipse_at_top,_rgba(167,139,219,0.16),_transparent_48%),radial-gradient(ellipse_at_bottom_right,_rgba(90,62,142,0.1),_transparent_52%),radial-gradient(ellipse_at_bottom_left,_rgba(212,194,245,0.14),_transparent_42%)] text-ink transition-colors duration-300 dark:bg-midnight dark:bg-none dark:text-[#EDE7F8]">
           <ScrollProgress />
           <WhatsAppChat />
           {match ? <CaseStudy slug={decodeURIComponent(match[1])} /> : <Home />}

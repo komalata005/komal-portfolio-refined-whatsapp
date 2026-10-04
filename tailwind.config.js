@@ -5,13 +5,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        paper: '#FBF9FD',
-        paperTint: '#F1ECF8',
+        paper: '#F8F7FC',
+        paperTint: '#EEEAF8',
         ink: '#211732',
         inkSoft: '#5B5470',
         mist: '#ACAFC2',
-        mistLine: '#DAD7E6',
-        lilac: '#9B7FD9',
+        mistLine: '#E0D8EA',
+        blush: '#C4B5E8',
+        lilac: '#A78BDB',
         violet: '#5A3E8E',
         violetDeep: '#46316F',
         midnight: '#241A3D',

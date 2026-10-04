@@ -172,7 +172,7 @@ export default function Hero() {
 
   return (
     <section id="hero" className={`relative isolate overflow-hidden pb-14 pt-2 md:pb-16 md:pt-3 ${!showContent ? 'whoami-stage' : ''}`}>
-      <GradientBackdrop />
+      <GradientBackdrop showMotifs={!showContent} />
       <span className="hero-star hero-star-one" aria-hidden="true">✦</span>
       <span className="hero-star hero-star-two" aria-hidden="true">✧</span>
       <span className="hero-star hero-star-three" aria-hidden="true">✦</span>
@@ -265,13 +265,10 @@ export default function Hero() {
               onMouseLeave={() => setFlagshipPaused(false)}
             >
               <div key={project.slug} className="glass-shell animate-card-flip">
-                <article className="glass-card flex flex-col items-center p-3 text-ink dark:text-[#F6F2FC]">
-                  <p className="w-full text-center text-[0.58rem] font-semibold uppercase tracking-[0.16em] text-violet dark:text-lilac">Featured project</p>
-                  <h2 className="mt-1.5 w-full text-center font-serif text-[1.3rem] leading-tight">{projectName}</h2>
-                  <p className="mt-0.5 w-full text-center text-[0.7rem] text-inkSoft dark:text-[#C8BFE3]">{meta}</p>
+                <article className="glass-card p-2.5 text-ink dark:text-[#F6F2FC]">
                   <a
                     href={caseHref}
-                    className={`mt-2.5 block w-full overflow-hidden rounded-xl bg-gradient-to-br ${project.gradient}`}
+                    className={`relative block w-full overflow-hidden rounded-xl bg-gradient-to-br ${project.gradient}`}
                     aria-label={`View ${projectName} case study`}
                   >
                     {project.image ? (
@@ -280,169 +277,148 @@ export default function Hero() {
                         alt={`${projectName} preview`}
                         width="800"
                         height="400"
-                        className="aspect-[2/1] h-auto w-full object-cover"
+                        className="aspect-[16/10] h-auto w-full object-cover"
                       />
                     ) : (
-                      <div className="aspect-[2/1] bg-gradient-to-br from-lilac/40 to-violet" />
+                      <div className="aspect-[16/10] bg-gradient-to-br from-lilac/40 to-violet" />
                     )}
                   </a>
-                  <div className="mt-2.5 grid w-full grid-cols-2 gap-2">
-                    <div className="glass-chip rounded-xl px-2.5 py-2 text-center">
-                      <p className="text-[0.58rem] font-semibold uppercase tracking-[0.12em] text-violet dark:text-lilac">Problem</p>
-                      <p className="mt-0.5 text-[0.72rem] leading-4 text-ink dark:text-[#F0EAFB]">{note.focus}</p>
+
+                  <div className="mt-2.5 px-0.5 text-left">
+                    <p className="text-[0.58rem] font-semibold uppercase tracking-[0.16em] text-violet dark:text-lilac">Featured project</p>
+                    <div className="mt-1 flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                      <h2 className="font-serif text-[1.15rem] leading-tight">{projectName}</h2>
+                      <span className="text-[0.72rem] text-inkSoft dark:text-[#B7ABD4]">{meta}</span>
                     </div>
-                    <div className="glass-chip rounded-xl px-2.5 py-2 text-center">
-                      <p className="text-[0.58rem] font-semibold uppercase tracking-[0.12em] text-violet dark:text-lilac">Design solution</p>
-                      <p className="mt-0.5 text-[0.72rem] leading-4 text-ink dark:text-[#F0EAFB]">{note.move}</p>
+                    <p className="mt-1 text-[0.78rem] leading-5 text-inkSoft dark:text-[#C8BFE3]">
+                      <span className="font-medium text-ink dark:text-[#EDE7F8]">{note.focus}</span>
+                      <span className="mx-1.5 text-mist">·</span>
+                      {note.move}
+                    </p>
+                  </div>
+
+                  <div className="mt-2.5 flex w-full flex-wrap items-center justify-between gap-2 px-0.5">
+                    <div className="flex flex-wrap items-center gap-2.5">
+                      <a href={caseHref} className="rounded-full bg-violet px-3.5 py-1.5 text-[0.82rem] font-medium text-white hover:bg-violetDeep">View case study →</a>
+                      {project.figmaUrl && (
+                        <a href={project.figmaUrl} target="_blank" rel="noopener noreferrer" className="text-[0.82rem] text-inkSoft hover:text-violet dark:text-[#C8BFE3] dark:hover:text-lilac">Figma file ↗</a>
+                      )}
                     </div>
-                  </div>
-                  <div className="mt-2.5 flex w-full flex-wrap items-center justify-center gap-2.5">
-                    <a href={caseHref} className="rounded-full bg-violet px-3.5 py-1.5 text-[0.82rem] font-medium text-white hover:bg-violetDeep">View case study →</a>
-                    {project.figmaUrl && (
-                      <a href={project.figmaUrl} target="_blank" rel="noopener noreferrer" className="text-[0.82rem] text-inkSoft hover:text-violet dark:text-[#C8BFE3] dark:hover:text-lilac">Figma file ↗</a>
-                    )}
-                  </div>
-                  <div className="mt-2 flex w-full items-center justify-center gap-1.5">
-                    <button
-                      type="button"
-                      aria-label="Previous featured project"
-                      onClick={() => setFlagshipIndex((current) => (current - 1 + projects.length) % projects.length)}
-                      className="grid h-8 w-8 place-items-center rounded-full border border-white/50 bg-white/40 text-ink backdrop-blur-md hover:border-violet hover:text-violet dark:border-white/15 dark:bg-white/10 dark:text-[#EDE7F8]"
-                    >
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-                        <path d="M15 18l-6-6 6-6" />
-                      </svg>
-                    </button>
-                    <button
-                      type="button"
-                      aria-label="Next featured project"
-                      onClick={() => setFlagshipIndex((current) => (current + 1) % projects.length)}
-                      className="grid h-8 w-8 place-items-center rounded-full border border-white/50 bg-white/40 text-ink backdrop-blur-md hover:border-violet hover:text-violet dark:border-white/15 dark:bg-white/10 dark:text-[#EDE7F8]"
-                    >
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-                        <path d="M9 18l6-6-6-6" />
-                      </svg>
-                    </button>
+                    <div className="flex items-center gap-1.5">
+                      <button
+                        type="button"
+                        aria-label="Previous featured project"
+                        onClick={() => setFlagshipIndex((current) => (current - 1 + projects.length) % projects.length)}
+                        className="grid h-8 w-8 place-items-center rounded-full border border-white/50 bg-white/40 text-ink backdrop-blur-md hover:border-violet hover:text-violet dark:border-white/15 dark:bg-white/10 dark:text-[#EDE7F8]"
+                      >
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                          <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        aria-label="Next featured project"
+                        onClick={() => setFlagshipIndex((current) => (current + 1) % projects.length)}
+                        className="grid h-8 w-8 place-items-center rounded-full border border-white/50 bg-white/40 text-ink backdrop-blur-md hover:border-violet hover:text-violet dark:border-white/15 dark:bg-white/10 dark:text-[#EDE7F8]"
+                      >
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                          <path d="M9 18l6-6-6-6" />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </div>
             </div>
           </div>
 
-          <div className={`mx-auto mt-16 max-w-content px-8 ${contentShown}`} style={{ animationDelay: '280ms' }}>
-            <article className="hero-stats-panel rounded-[28px] border border-white/50 bg-white/55 px-5 py-6 text-ink shadow-[0_16px_40px_rgba(70,49,111,0.1)] backdrop-blur-2xl dark:border-white/15 dark:bg-white/[0.06] dark:text-[#F6F2FC] dark:shadow-[0_0_40px_rgba(155,127,217,0.18),0_20px_50px_rgba(8,4,20,0.35)] md:px-7 md:py-7">
-              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                {[
-                  {
-                    label: 'Experience',
-                    value: <><Counter value={5} />+ years</>,
-                    hint: 'Product & UI design',
-                    iconBg: 'bg-[#E8F7F2] text-[#1F8A70] dark:bg-[#1F8A70]/20 dark:text-[#7DDFC0]',
-                    icon: (
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-                        <circle cx="12" cy="12" r="8" />
-                        <path d="M12 8v4l2.5 1.5" />
-                      </svg>
-                    ),
-                  },
-                  {
-                    label: 'Education',
-                    value: 'BSc Software Eng.',
-                    hint: 'Engineering foundation',
-                    iconBg: 'bg-[#FFF1E8] text-[#C56A2D] dark:bg-[#C56A2D]/20 dark:text-[#F0B48A]',
-                    icon: (
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-                        <path d="M3 9l9-4 9 4-9 4-9-4z" />
-                        <path d="M7 11.5v4.5c0 1.5 2.2 3 5 3s5-1.5 5-3v-4.5" />
-                      </svg>
-                    ),
-                  },
-                  {
-                    label: 'Based in',
-                    value: 'Karachi',
-                    hint: 'Working worldwide',
-                    iconBg: 'bg-[#EAF2FF] text-[#2F6FCB] dark:bg-[#2F6FCB]/20 dark:text-[#9CBDF5]',
-                    icon: (
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-                        <circle cx="12" cy="12" r="9" />
-                        <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18" />
-                      </svg>
-                    ),
-                  },
-                  {
-                    label: 'I design',
-                    value: 'Apps & UI systems',
-                    hint: 'Mobile, web, enterprise',
-                    iconBg: 'bg-[#FDECEF] text-[#C44B66] dark:bg-[#C44B66]/20 dark:text-[#F0A0B2]',
-                    icon: (
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-                        <rect x="3" y="4" width="18" height="14" rx="2" />
-                        <path d="M8 21h8M12 18v3" />
-                      </svg>
-                    ),
-                  },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="rounded-2xl border border-white/60 bg-white/65 px-3.5 py-3.5 text-center shadow-[0_8px_20px_rgba(70,49,111,0.05)] backdrop-blur-xl dark:border-white/12 dark:bg-white/[0.05] dark:shadow-[0_0_24px_rgba(155,127,217,0.12)]"
-                  >
-                    <div className={`mx-auto mb-2.5 inline-flex h-9 w-9 items-center justify-center rounded-xl ${item.iconBg}`}>
-                      {item.icon}
-                    </div>
-                    <p className="text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-inkSoft dark:text-[#B7ABD4]">{item.label}</p>
-                    <p className="mt-1 font-serif text-[1.05rem] leading-tight text-ink dark:text-[#F6F2FC]">{item.value}</p>
-                    <p className="mt-1 text-[0.75rem] leading-4 text-inkSoft dark:text-[#C8BFE3]">{item.hint}</p>
-                  </div>
-                ))}
-              </div>
+          <div className={`mx-auto mt-8 max-w-content px-8 ${contentShown}`} style={{ animationDelay: '280ms' }}>
+            <article className="hero-snapshot relative overflow-hidden rounded-2xl border border-white/55 bg-white/45 px-4 py-4 shadow-[0_16px_40px_rgba(70,49,111,0.08)] backdrop-blur-2xl dark:border-white/12 dark:bg-white/[0.05] dark:shadow-[0_0_36px_rgba(155,127,217,0.14)] md:px-6 md:py-4">
+              <div className="pointer-events-none absolute -right-12 -top-14 h-36 w-36 rounded-full bg-lilac/15 blur-3xl dark:bg-lilac/20" aria-hidden="true" />
 
-              <div className="mt-4 grid gap-3 md:grid-cols-2">
-                <div className="rounded-2xl border border-white/60 bg-white/65 px-4 py-3.5 shadow-[0_6px_18px_rgba(70,49,111,0.05)] backdrop-blur-xl dark:border-white/12 dark:bg-white/[0.05] dark:shadow-[0_0_24px_rgba(155,127,217,0.12)]">
-                  <div className="mb-2.5 flex items-center gap-2.5">
-                    <span className="grid h-8 w-8 place-items-center rounded-lg bg-[#E8F7F2] text-[#1F8A70] dark:bg-[#1F8A70]/20 dark:text-[#7DDFC0]" aria-hidden="true">
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M4 7h16M7 12h10M9 17h6" />
-                      </svg>
-                    </span>
-                    <div>
-                      <p className="text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-inkSoft dark:text-[#B7ABD4]">Industries</p>
-                      <p className="text-[0.8rem] font-medium text-ink dark:text-[#F6F2FC]">Where I ship work</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {['Healthcare', 'Fintech', 'ERP', 'HR', 'Real estate', 'AI'].map((chip) => (
-                      <span
-                        key={chip}
-                        className="rounded-full border border-[#E7E0F2] bg-[#FBF9FD]/80 px-2.5 py-1 text-[0.72rem] font-medium text-inkSoft backdrop-blur-sm dark:border-white/12 dark:bg-white/[0.06] dark:text-[#D8CFE8]"
-                      >
-                        {chip}
-                      </span>
-                    ))}
+              <div className="relative flex flex-col gap-3.5">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-violet dark:text-lilac">Background</p>
+                    <p className="font-serif text-[1.65rem] leading-none tracking-[-0.03em] text-ink dark:text-[#F6F2FC]">
+                      <Counter value={5} />
+                      <span className="text-violet dark:text-lilac">+</span>
+                      <em className="ml-1.5 text-[0.95rem] italic text-violet dark:text-lilac">years</em>
+                    </p>
+                    <span className="hidden h-4 w-px bg-[#E4D8F6] dark:bg-white/15 sm:block" aria-hidden="true" />
+                    <p className="text-[0.8rem] text-inkSoft dark:text-[#C8BFE3]">Product design across apps & systems</p>
                   </div>
                 </div>
 
-                <div className="rounded-2xl border border-white/60 bg-white/65 px-4 py-3.5 shadow-[0_6px_18px_rgba(70,49,111,0.05)] backdrop-blur-xl dark:border-white/12 dark:bg-white/[0.05] dark:shadow-[0_0_24px_rgba(155,127,217,0.12)]">
-                  <div className="mb-2.5 flex items-center gap-2.5">
-                    <span className="grid h-8 w-8 place-items-center rounded-lg bg-[#FFF1E8] text-[#C56A2D] dark:bg-[#C56A2D]/20 dark:text-[#F0B48A]" aria-hidden="true">
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M12 3l2.2 4.5L19 8.3l-3.5 3.4.8 4.8L12 14.2 7.7 16.5l.8-4.8L5 8.3l4.8-.8L12 3z" />
-                      </svg>
-                    </span>
-                    <div>
-                      <p className="text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-inkSoft dark:text-[#B7ABD4]">Craft & tools</p>
-                      <p className="text-[0.8rem] font-medium text-ink dark:text-[#F6F2FC]">How I build</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {['Figma', 'Stitch', 'Claude', 'Cursor', 'AI workflows'].map((tool) => (
-                      <span
-                        key={tool}
-                        className="rounded-full border border-[#E7E0F2] bg-[#FBF9FD]/80 px-2.5 py-1 text-[0.72rem] font-medium text-inkSoft backdrop-blur-sm dark:border-white/12 dark:bg-white/[0.06] dark:text-[#D8CFE8]"
-                      >
-                        {tool}
+                <div className="flex flex-wrap items-center gap-x-5 gap-y-2.5">
+                  {[
+                    {
+                      label: 'BSc Software Eng.',
+                      icon: (
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                          <path d="M22 10L12 5 2 10l10 5 10-5z" />
+                          <path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5" />
+                        </svg>
+                      ),
+                    },
+                    {
+                      label: 'Karachi · remote',
+                      icon: (
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                          <path d="M12 21s7-5.4 7-11a7 7 0 10-14 0c0 5.6 7 11 7 11z" />
+                          <circle cx="12" cy="10" r="2.4" />
+                        </svg>
+                      ),
+                    },
+                    {
+                      label: 'Apps & UI systems',
+                      icon: (
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                          <rect x="3" y="4" width="18" height="14" rx="2" />
+                          <path d="M8 20h8M12 18v2" />
+                        </svg>
+                      ),
+                    },
+                  ].map((item) => (
+                    <div key={item.label} className="inline-flex items-center gap-2 text-[0.84rem] text-ink dark:text-[#EDE7F8]">
+                      <span className="grid h-7 w-7 place-items-center rounded-full border border-[#E4D8F6]/90 bg-white/70 text-violet dark:border-white/12 dark:bg-white/[0.06] dark:text-lilac">
+                        {item.icon}
                       </span>
-                    ))}
-                  </div>
+                      {item.label}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-[#E7E0F2]/80 pt-3 dark:border-white/10">
+                  <span className="inline-flex items-center gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-inkSoft dark:text-[#B7ABD4]">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                      <path d="M4 7h16M4 12h10M4 17h14" />
+                    </svg>
+                    Industries
+                  </span>
+                  {['Healthcare', 'Fintech', 'ERP', 'HR', 'Real estate', 'AI'].map((chip) => (
+                    <span
+                      key={chip}
+                      className="rounded-full border border-[#E4D8F6]/90 bg-white/65 px-2.5 py-1 text-[0.74rem] font-medium text-ink dark:border-white/12 dark:bg-white/[0.06] dark:text-[#E8E0F6]"
+                    >
+                      {chip}
+                    </span>
+                  ))}
+                  <span className="mx-1 hidden h-4 w-px bg-[#E4D8F6] dark:bg-white/15 md:block" aria-hidden="true" />
+                  <span className="inline-flex items-center gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-inkSoft dark:text-[#B7ABD4]">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                      <path d="M12 3l1.8 5.4H19l-4.4 3.2 1.7 5.4L12 14.8 7.7 17l1.7-5.4L5 8.4h5.2L12 3z" />
+                    </svg>
+                    Tools
+                  </span>
+                  {['Figma', 'Stitch', 'Claude', 'Cursor', 'AI'].map((tool) => (
+                    <span
+                      key={tool}
+                      className="rounded-full border border-[#E4D8F6]/90 bg-white/65 px-2.5 py-1 text-[0.74rem] font-medium text-ink dark:border-white/12 dark:bg-white/[0.06] dark:text-[#E8E0F6]"
+                    >
+                      {tool}
+                    </span>
+                  ))}
                 </div>
               </div>
             </article>
