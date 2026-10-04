@@ -17,14 +17,19 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-20 border-b border-mistLine bg-paper/85 backdrop-blur-md transition-colors dark:border-white/10 dark:bg-midnight/85">
       <div className="mx-auto flex max-w-content items-center justify-between px-8 py-3">
-        <a href="/" className="font-script text-[1.85rem] leading-none text-violet dark:text-lilac">Komal Ata</a>
+        <a
+          href="/"
+          className="font-sans text-[1.02rem] font-semibold tracking-[-0.01em] text-ink transition-colors hover:text-violet dark:text-[#F6F2FC] dark:hover:text-lilac"
+        >
+          Komal Ata
+        </a>
 
-        <ul className="hidden gap-9 md:flex">
+        <ul className="hidden gap-8 md:flex">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="relative text-[0.95rem] text-inkSoft transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[1.5px] after:w-0 after:bg-violet after:transition-all after:duration-300 hover:text-violet hover:after:w-full dark:text-[#C8BFE3] dark:hover:text-lilac dark:after:bg-lilac"
+                className="relative text-[0.88rem] font-medium tracking-[0.01em] text-inkSoft transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[1.5px] after:w-0 after:bg-violet after:transition-all after:duration-300 hover:text-violet hover:after:w-full dark:text-[#C8BFE3] dark:hover:text-lilac dark:after:bg-lilac"
               >
                 {l.label}
               </a>

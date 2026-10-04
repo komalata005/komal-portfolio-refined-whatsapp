@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Work from './components/Work'
 import Process from './components/Process'
 import Experience from './components/Experience'
+import Reviews from './components/Reviews'
 import About from './components/About'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
@@ -22,6 +23,7 @@ function Home() {
         <About />
         <Process />
         <Experience />
+        <Reviews />
       </main>
       <Footer />
     </>

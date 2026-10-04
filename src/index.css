@@ -6,13 +6,34 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Urdu needs a script that actually has the glyphs — Fraunces/IBM Plex don't. */
+body {
+  font-family: Outfit, system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-serif {
+  font-family: Syne, system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+/* Urdu needs a script that actually has the glyphs — Latin display fonts don't. */
 html[lang='ur'] body,
 html[lang='ur'] h1,
 html[lang='ur'] h2,
 html[lang='ur'] h3,
 html[lang='ur'] h4 {
-  font-family: 'Noto Nastaliq Urdu', 'IBM Plex Sans', sans-serif;
+  font-family: 'Noto Nastaliq Urdu', Outfit, sans-serif;
+  letter-spacing: 0;
 }
 
 @keyframes rise-in {
@@ -316,9 +337,9 @@ html[lang='ur'] h4 {
 }
 
 .section-divider-label {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: Syne, system-ui, sans-serif;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #5A3E8E;
@@ -850,10 +871,10 @@ html[dir='rtl'] .nav-actions, html[dir='rtl'] .hero-actions { flex-direction: ro
 .gradient-backdrop .ux-type {
   top: 58%;
   left: 28%;
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: Syne, system-ui, sans-serif;
+  font-weight: 800;
   font-size: 1.85rem;
-  font-style: italic;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
   color: rgba(90, 62, 142, 0.32);
   animation: ux-float-a 48s ease-in-out infinite;
 }

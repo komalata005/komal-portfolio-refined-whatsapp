@@ -117,7 +117,7 @@ export default function Footer() {
 
         <div className="mt-16 flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-5 text-[0.8rem] text-[#9C90BC]">
           <p>© {year} Komal Ata</p>
-          <p className="font-script text-[1.35rem] leading-none text-white">Komal Ata</p>
+          <p className="font-sans text-[0.95rem] font-semibold tracking-[-0.01em] text-white">Komal Ata</p>
           <a href="#hero" className="transition hover:text-white">
             Back to top ↑
           </a>

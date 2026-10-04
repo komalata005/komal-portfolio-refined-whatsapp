@@ -19,9 +19,9 @@ export default {
         midnight2: '#2E2150',
       },
       fontFamily: {
-        serif: ['Fraunces', 'serif'],
-        sans: ['"IBM Plex Sans"', 'sans-serif'],
-        script: ['"Pinyon Script"', 'cursive'],
+        serif: ['Syne', 'system-ui', 'sans-serif'],
+        sans: ['Outfit', 'system-ui', 'sans-serif'],
+        script: ['Syne', 'system-ui', 'sans-serif'],
       },
       maxWidth: {
         content: '1120px',
