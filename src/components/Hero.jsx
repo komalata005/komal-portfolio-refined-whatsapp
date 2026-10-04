@@ -77,32 +77,90 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="space-y-5">
-        <div ref={cardParallax} className={`rounded border border-mistLine bg-paperTint p-6 dark:border-white/10 dark:bg-midnight2 ${shown}`} style={{ animationDelay: '300ms' }}>
-          <div className="text-[0.92rem] text-inkSoft dark:text-[#C8BFE3]">
-            <span className="mr-2 inline-block h-2 w-2 animate-pulse rounded-full bg-[#6FBF7A]" />
-            {t.hero.statusBadge}
+        <div ref={cardParallax} className={`relative ${shown}`} style={{ animationDelay: '300ms' }}>
+          <div className="absolute -top-3 right-4 z-10 hidden items-center gap-2 rounded-full border border-white/40 bg-midnight px-3 py-1.5 text-[0.68rem] text-white shadow-lg sm:flex">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#F07178]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#F5C542]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#6FBF7A]" />
+            <span className="ml-1">Schedule Edge · ERP</span>
           </div>
-          <div className="mt-3.5 text-base dark:text-[#F6F2FC]">{t.hero.statusLine}</div>
-          <div className="mt-5 grid gap-2.5 border-t border-mistLine pt-4 text-[0.92rem] text-inkSoft dark:border-white/10 dark:text-[#C8BFE3]">
-            <div>
-              {t.hero.factExperience} — <span className="font-medium text-ink dark:text-[#F6F2FC]"><Counter value={5} /> {t.hero.factExperienceValue.replace(/[0-9]+\s*/, '')}</span>
+          <article className="overflow-hidden rounded-3xl border border-[#E7E0F2] bg-white shadow-[0_24px_50px_rgba(70,49,111,0.12)] dark:border-white/10 dark:bg-midnight2">
+            <div className="flex items-center justify-between gap-3 px-5 pb-2 pt-5">
+              <p className="text-[0.68rem] font-medium uppercase tracking-[0.14em] text-violet dark:text-lilac">Flagship case study</p>
+              <p className="text-[0.68rem] uppercase tracking-[0.12em] text-inkSoft dark:text-[#9C90BC]">Mobile app</p>
             </div>
-            <div>
-              {t.hero.factBased} — <span className="font-medium text-ink dark:text-[#F6F2FC]">{t.hero.factBasedValue}</span>
+            <div className="px-5">
+              <h2 className="font-serif text-2xl text-ink dark:text-[#F6F2FC]">Nuré</h2>
+              <p className="mt-2 text-sm leading-6 text-inkSoft dark:text-[#C8BFE3]">
+                Less nagging. More sharing. A shared-load home that shows who is carrying the day.
+              </p>
             </div>
-            <div>
-              {t.hero.factBackground} — <span className="font-medium text-ink dark:text-[#F6F2FC]">{t.hero.factBackgroundValue}</span>
+            <a href="/case-study/nure" className="mt-4 block px-5">
+              <img
+                src="/images/projects/nure-portfolio-thumbnail.png"
+                alt="Nuré product screens"
+                className="aspect-[8/5] w-full rounded-2xl object-cover"
+              />
+            </a>
+            <div className="flex flex-wrap items-center gap-3 px-5 py-5">
+              <a href="/case-study/nure" className="rounded-[3px] bg-violet px-4 py-2 text-sm font-medium text-white hover:bg-violetDeep">
+                View case study →
+              </a>
+              <a href="/case-study/schedule-edge" className="text-sm text-inkSoft hover:text-violet dark:text-[#C8BFE3] dark:hover:text-lilac">
+                Schedule Edge
+              </a>
             </div>
+          </article>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-14 max-w-content px-8">
+        <article className="rounded-3xl border border-[#E7E0F2] bg-white p-5 shadow-[0_10px_30px_rgba(70,49,111,0.06)] dark:border-white/10 dark:bg-midnight2 md:p-6">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <img
+                src="https://komalata01.netlify.app/assets/images/profile-pic.png"
+                alt=""
+                className="h-12 w-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-medium text-ink dark:text-[#F6F2FC]">
+                  Komal Ata <span className="text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-violet dark:text-lilac">· Lead</span>
+                </p>
+                <p className="text-sm text-inkSoft dark:text-[#C8BFE3]">Product designer · 5 years</p>
+              </div>
+            </div>
+            <p className="inline-flex items-center gap-2 text-sm text-violet dark:text-lilac">
+              <span className="h-2 w-2 rounded-full bg-lilac" aria-hidden="true" />
+              Open to senior roles
+            </p>
           </div>
-        </div>
-        <aside className={`rounded border border-mistLine/80 bg-paper/60 p-5 backdrop-blur-sm dark:border-white/10 dark:bg-midnight/55 ${shown}`} style={{ animationDelay: '380ms' }}>
-          <h2 className="font-serif text-xl dark:text-[#F6F2FC]">{t.about.title}</h2>
-          <p className="mt-3 text-[0.92rem] leading-relaxed text-inkSoft dark:text-[#C8BFE3]">{t.about.p1}</p>
-          <div className="mt-4 border-t border-mistLine pt-3 text-[0.82rem] text-inkSoft dark:border-white/10 dark:text-[#C8BFE3]"><span className="font-medium text-ink dark:text-[#F6F2FC]">{t.about.eduLine}</span> — {t.about.eduSchool}</div>
-          <div className="mt-3 text-[0.8rem] text-violet dark:text-lilac">AI design tools: Cursor · Claude · ChatGPT · Stitch · MCP servers for Figma workflows</div>
-        </aside>
-        </div>
+          <dl className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div>
+              <dt className="text-[0.72rem] uppercase tracking-[0.12em] text-inkSoft dark:text-[#9C90BC]">Experience</dt>
+              <dd className="mt-1 font-serif text-xl text-ink dark:text-[#F6F2FC]"><Counter value={5} />+ years</dd>
+            </div>
+            <div>
+              <dt className="text-[0.72rem] uppercase tracking-[0.12em] text-inkSoft dark:text-[#9C90BC]">Engineering</dt>
+              <dd className="mt-1 font-serif text-xl text-ink dark:text-[#F6F2FC]">BSc Software Eng.</dd>
+            </div>
+            <div>
+              <dt className="text-[0.72rem] uppercase tracking-[0.12em] text-inkSoft dark:text-[#9C90BC]">Location</dt>
+              <dd className="mt-1 font-serif text-xl text-ink dark:text-[#F6F2FC]">Karachi · Worldwide</dd>
+            </div>
+            <div>
+              <dt className="text-[0.72rem] uppercase tracking-[0.12em] text-inkSoft dark:text-[#9C90BC]">Enterprise</dt>
+              <dd className="mt-1 font-serif text-xl text-ink dark:text-[#F6F2FC]">ERP, fintech, and product UI</dd>
+            </div>
+          </dl>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {['Figma', 'Design systems', 'Claude & Cursor', 'React / Tailwind'].map((chip) => (
+              <span key={chip} className="rounded-full border border-[#E4D8F6] px-3 py-1 text-[0.75rem] text-inkSoft dark:border-white/10 dark:text-[#C8BFE3]">
+                {chip}
+              </span>
+            ))}
+          </div>
+        </article>
       </div>
     </section>
   )

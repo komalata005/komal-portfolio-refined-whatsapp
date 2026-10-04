@@ -15,6 +15,12 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-20 border-b border-mistLine bg-paper/85 backdrop-blur-md transition-colors dark:border-white/10 dark:bg-midnight/85">
+      <div className="flex justify-center border-b border-mistLine/80 bg-[#F7F3FC] px-8 py-2 dark:border-white/10 dark:bg-midnight2">
+        <span className="inline-flex items-center gap-2 rounded-full border border-[#E4D8F6] bg-white px-3 py-1 text-[0.78rem] font-medium text-ink dark:border-white/10 dark:bg-midnight dark:text-[#F6F2FC]">
+          <span className="h-2 w-2 rounded-full bg-violet" aria-hidden="true" />
+          Available Now
+        </span>
+      </div>
       <div className="mx-auto flex max-w-content items-center justify-between px-8 py-5">
         <a href="/" className="font-script text-3xl leading-none pb-1 text-violet dark:text-lilac">Komal Ata</a>
 

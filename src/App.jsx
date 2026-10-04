@@ -10,6 +10,7 @@ import CaseStudy from './components/CaseStudy'
 import { ThemeProvider } from './context/ThemeContext'
 import { LocaleProvider } from './context/LocaleContext'
 import { EmailDialogProvider } from './components/EmailPopup'
+import WhatsAppChat from './components/WhatsAppChat'
 
 function Home() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
         <div className="min-h-screen bg-paper text-ink transition-colors duration-300 dark:bg-midnight dark:text-[#EDE7F8]">
           <ScrollProgress />
           <CustomCursor />
+          <WhatsAppChat />
           {match ? <CaseStudy slug={decodeURIComponent(match[1])} /> : <Home />}
         </div>
         </EmailDialogProvider>
