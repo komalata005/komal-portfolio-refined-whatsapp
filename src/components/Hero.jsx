@@ -37,7 +37,7 @@ export default function Hero() {
       <span className="hero-star hero-star-seven" aria-hidden="true">✦</span>
       <div className="mx-auto grid max-w-content grid-cols-1 items-end gap-9 px-8 md:grid-cols-[1.55fr_1fr] md:gap-16">
         <div>
-          <div className={`mb-6 flex items-center gap-3.5 ${shown}`} style={{ animationDelay: '0ms' }}>
+          <div className={`mb-6 flex flex-wrap items-center gap-3.5 ${shown}`} style={{ animationDelay: '0ms' }}>
             <img
               src="https://komalata01.netlify.app/assets/images/profile-pic.png"
               alt="Komal Ata"
@@ -45,6 +45,10 @@ export default function Hero() {
             />
             <span className="text-[0.95rem] text-inkSoft dark:text-[#C8BFE3]">
               Komal Ata <span className="text-mist">·</span> {t.hero.roleTag}
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#E4D8F6] bg-[#F7F3FC] px-3 py-1 text-[0.78rem] font-medium text-ink">
+              <span className="h-2 w-2 rounded-full bg-violet" aria-hidden="true" />
+              Available Now
             </span>
           </div>
 
@@ -77,87 +81,103 @@ export default function Hero() {
           </div>
         </div>
 
-        <div ref={cardParallax} className={`relative ${shown}`} style={{ animationDelay: '300ms' }}>
-          <div className="absolute -top-3 right-4 z-10 hidden items-center gap-2 rounded-full border border-white/40 bg-midnight px-3 py-1.5 text-[0.68rem] text-white shadow-lg sm:flex">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#F07178]" />
-            <span className="h-1.5 w-1.5 rounded-full bg-[#F5C542]" />
-            <span className="h-1.5 w-1.5 rounded-full bg-[#6FBF7A]" />
-            <span className="ml-1">Schedule Edge · ERP</span>
+        <div ref={cardParallax} className={`relative pt-4 ${shown}`} style={{ animationDelay: '300ms' }}>
+          <div className="absolute right-3 top-0 z-10 flex items-center gap-2 rounded-full border border-white/10 bg-[#2A2144] px-3 py-1.5 text-[0.68rem] text-white shadow-lg">
+            <span className="flex gap-1" aria-hidden="true">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#F07178]" />
+              <span className="h-1.5 w-1.5 rounded-full bg-[#F5C542]" />
+              <span className="h-1.5 w-1.5 rounded-full bg-[#6FBF7A]" />
+            </span>
+            Schedule Edge — ERP
+            <span className="rounded-full bg-white/10 px-2 py-0.5 text-[0.62rem] tracking-wide">Enterprise UX</span>
           </div>
-          <article className="overflow-hidden rounded-3xl border border-[#E7E0F2] bg-white shadow-[0_24px_50px_rgba(70,49,111,0.12)] dark:border-white/10 dark:bg-midnight2">
-            <div className="flex items-center justify-between gap-3 px-5 pb-2 pt-5">
-              <p className="text-[0.68rem] font-medium uppercase tracking-[0.14em] text-violet dark:text-lilac">Flagship case study</p>
-              <p className="text-[0.68rem] uppercase tracking-[0.12em] text-inkSoft dark:text-[#9C90BC]">Mobile app</p>
+          <article className="relative z-[1] mt-4 rounded-[28px] border border-[#E7DFF4] bg-white p-4 text-ink shadow-[0_24px_50px_rgba(90,62,142,0.16)]">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <p className="text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-violet">Flagship case study</p>
+                <p className="mt-1 text-[0.72rem] text-inkSoft">Mobile app · Design system</p>
+                <h2 className="mt-2 font-serif text-[1.35rem] leading-tight">Nuré</h2>
+              </div>
+              <div className="rounded-2xl bg-[#2A2144] px-3 py-2 text-right text-white">
+                <p className="font-serif text-sm">75/25</p>
+                <p className="text-[0.62rem] text-white/70">Shared today</p>
+              </div>
             </div>
-            <div className="px-5">
-              <h2 className="font-serif text-2xl text-ink dark:text-[#F6F2FC]">Nuré</h2>
-              <p className="mt-2 text-sm leading-6 text-inkSoft dark:text-[#C8BFE3]">
-                Less nagging. More sharing. A shared-load home that shows who is carrying the day.
-              </p>
+            <p className="mt-3 text-[0.84rem] leading-6 text-inkSoft">
+              “Less nagging. More sharing.” The home screen shows who is carrying the day, then names one fair next move.
+            </p>
+            <div className="mt-3 grid grid-cols-2 gap-2">
+              <div className="rounded-2xl bg-[#F6F1FC] p-3">
+                <p className="text-[0.68rem] text-inkSoft">Target split</p>
+                <p className="mt-1 font-serif text-lg">50/50</p>
+              </div>
+              <div className="rounded-2xl bg-[#2A2144] p-3 text-white">
+                <p className="text-[0.68rem] text-white/70">One ask</p>
+                <p className="mt-1 text-sm leading-5">Move one task, not a lecture</p>
+              </div>
             </div>
-            <a href="/case-study/nure" className="mt-4 block px-5">
-              <img
-                src="/images/projects/nure-portfolio-thumbnail.png"
-                alt="Nuré product screens"
-                className="aspect-[8/5] w-full rounded-2xl object-cover"
-              />
-            </a>
-            <div className="flex flex-wrap items-center gap-3 px-5 py-5">
-              <a href="/case-study/nure" className="rounded-[3px] bg-violet px-4 py-2 text-sm font-medium text-white hover:bg-violetDeep">
-                View case study →
-              </a>
-              <a href="/case-study/schedule-edge" className="text-sm text-inkSoft hover:text-violet dark:text-[#C8BFE3] dark:hover:text-lilac">
-                Schedule Edge
-              </a>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {['UX research', 'Product design', 'Figma'].map((tag) => (
+                <span key={tag} className="rounded-full border border-[#E4D8F6] bg-[#F8F4FD] px-2.5 py-1 text-[0.7rem] text-violet">{tag}</span>
+              ))}
+            </div>
+            <div className="mt-4 flex flex-wrap items-center gap-3">
+              <a href="/case-study/nure" className="rounded-full bg-violet px-4 py-2 text-sm font-medium text-white hover:bg-violetDeep">View case study →</a>
+              <a href="https://www.figma.com/design/FMlgZ9a1k9c4RV309HjFY7/Nure" target="_blank" rel="noopener noreferrer" className="text-sm text-inkSoft hover:text-violet">Figma file ↗</a>
+            </div>
+            <div className="mt-4 flex items-center justify-between gap-3 border-t border-[#EFE8F8] pt-3">
+              <div className="flex items-center gap-2">
+                <img src="https://komalata01.netlify.app/assets/images/profile-pic.png" alt="" className="h-9 w-9 rounded-full object-cover" />
+                <div>
+                  <p className="text-sm font-medium">Komal Ata <span className="text-[0.62rem] font-semibold uppercase tracking-[0.12em] text-violet">Product lead</span></p>
+                  <p className="text-[0.72rem] text-inkSoft">Senior UI/UX designer · BSc Software Engineering</p>
+                </div>
+              </div>
+              <p className="hidden text-right text-[0.72rem] text-inkSoft sm:block">Ex-Cipher Impact</p>
             </div>
           </article>
         </div>
       </div>
 
-      <div className="mx-auto mt-14 max-w-content px-8">
-        <article className="rounded-3xl border border-[#E7E0F2] bg-white p-5 shadow-[0_10px_30px_rgba(70,49,111,0.06)] dark:border-white/10 dark:bg-midnight2 md:p-6">
+      <div className="mx-auto mt-16 max-w-content px-8">
+        <article className="rounded-[28px] border border-[#E7DFF4] bg-white p-5 text-ink shadow-[0_16px_40px_rgba(90,62,142,0.08)] md:p-6">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <img
-                src="https://komalata01.netlify.app/assets/images/profile-pic.png"
-                alt=""
-                className="h-12 w-12 rounded-full object-cover"
-              />
+              <img src="https://komalata01.netlify.app/assets/images/profile-pic.png" alt="" className="h-12 w-12 rounded-full object-cover" />
               <div>
-                <p className="font-medium text-ink dark:text-[#F6F2FC]">
-                  Komal Ata <span className="text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-violet dark:text-lilac">· Lead</span>
-                </p>
-                <p className="text-sm text-inkSoft dark:text-[#C8BFE3]">Product designer · 5 years</p>
+                <p className="font-semibold">Komal Ata <span className="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-violet">· Lead</span></p>
+                <p className="max-w-[16ch] text-sm leading-5 text-inkSoft">Product designer and systems lead</p>
               </div>
             </div>
-            <p className="inline-flex items-center gap-2 text-sm text-violet dark:text-lilac">
-              <span className="h-2 w-2 rounded-full bg-lilac" aria-hidden="true" />
-              Open to senior roles
+            <p className="text-right text-[0.72rem] uppercase tracking-[0.16em] text-inkSoft">
+              Snapshot
+              <span className="mt-1 flex items-center justify-end gap-2 text-[0.82rem] normal-case tracking-normal text-violet">
+                <span className="h-2 w-2 rounded-full bg-[#D7C9F2]" aria-hidden="true" />
+                Open to senior roles
+              </span>
             </p>
           </div>
-          <dl className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="mt-6 grid gap-x-8 gap-y-5 sm:grid-cols-2">
             <div>
-              <dt className="text-[0.72rem] uppercase tracking-[0.12em] text-inkSoft dark:text-[#9C90BC]">Experience</dt>
-              <dd className="mt-1 font-serif text-xl text-ink dark:text-[#F6F2FC]"><Counter value={5} />+ years</dd>
+              <dt className="text-[0.72rem] text-inkSoft">Experience</dt>
+              <dd className="mt-1 font-serif text-2xl"><Counter value={5} />+ years practice</dd>
             </div>
             <div>
-              <dt className="text-[0.72rem] uppercase tracking-[0.12em] text-inkSoft dark:text-[#9C90BC]">Engineering</dt>
-              <dd className="mt-1 font-serif text-xl text-ink dark:text-[#F6F2FC]">BSc Software Eng.</dd>
+              <dt className="text-[0.72rem] text-inkSoft">Engineering DNA</dt>
+              <dd className="mt-1 font-serif text-2xl">BSc Software Eng.</dd>
             </div>
             <div>
-              <dt className="text-[0.72rem] uppercase tracking-[0.12em] text-inkSoft dark:text-[#9C90BC]">Location</dt>
-              <dd className="mt-1 font-serif text-xl text-ink dark:text-[#F6F2FC]">Karachi · Worldwide</dd>
+              <dt className="text-[0.72rem] text-inkSoft">Location</dt>
+              <dd className="mt-1 font-serif text-2xl">Karachi · Worldwide</dd>
             </div>
             <div>
-              <dt className="text-[0.72rem] uppercase tracking-[0.12em] text-inkSoft dark:text-[#9C90BC]">Enterprise</dt>
-              <dd className="mt-1 font-serif text-xl text-ink dark:text-[#F6F2FC]">ERP, fintech, and product UI</dd>
+              <dt className="text-[0.72rem] text-inkSoft">Core focus</dt>
+              <dd className="mt-1 font-serif text-2xl">ERP, fintech and AI UX</dd>
             </div>
           </dl>
           <div className="mt-5 flex flex-wrap gap-2">
-            {['Figma', 'Design systems', 'Claude & Cursor', 'React / Tailwind'].map((chip) => (
-              <span key={chip} className="rounded-full border border-[#E4D8F6] px-3 py-1 text-[0.75rem] text-inkSoft dark:border-white/10 dark:text-[#C8BFE3]">
-                {chip}
-              </span>
+            {['Figma tokens', 'Design systems', 'Claude & Cursor', 'React / Tailwind'].map((chip) => (
+              <span key={chip} className="rounded-full border border-[#E4D8F6] bg-[#FBF9FD] px-3 py-1 text-[0.75rem] text-inkSoft">{chip}</span>
             ))}
           </div>
         </article>

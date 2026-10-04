@@ -71,7 +71,7 @@ export default function WhatsAppChat() {
           />
           <button
             type="submit"
-            className="mt-3 w-full rounded-[3px] bg-violet px-4 py-2.5 text-sm font-medium text-white hover:bg-violetDeep"
+            className="mt-3 w-full rounded-[3px] bg-[#25D366] px-4 py-2.5 text-sm font-medium text-white hover:bg-[#1DAA54]"
           >
             Send on WhatsApp
           </button>
@@ -80,7 +80,7 @@ export default function WhatsAppChat() {
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}
-        className="inline-flex items-center gap-2 rounded-full bg-violet px-4 py-3 text-sm font-medium text-white shadow-lg hover:bg-violetDeep"
+        className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-medium text-white shadow-lg hover:bg-[#1DAA54]"
       >
         <span className="grid h-6 w-6 place-items-center rounded-full bg-white/15" aria-hidden="true">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
