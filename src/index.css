@@ -4,12 +4,14 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
 }
 
 body {
-  font-family: Outfit, system-ui, sans-serif;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
   font-weight: 400;
   letter-spacing: 0.005em;
+  overflow-x: clip;
 }
 
 h1,
@@ -17,23 +19,50 @@ h2,
 h3,
 h4,
 .font-serif {
-  font-family: Syne, system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-weight: 700;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.02em;
 }
 
 h1 {
   font-weight: 800;
 }
 
-/* Urdu needs a script that actually has the glyphs — Latin display fonts don't. */
+/* Arabic / Urdu: use script fonts that have the glyphs. */
+html[lang='ar'] body,
+html[lang='ar'] h1,
+html[lang='ar'] h2,
+html[lang='ar'] h3,
+html[lang='ar'] h4,
+html[lang='ar'] .font-serif {
+  font-family: 'Noto Sans Arabic', 'IBM Plex Sans', sans-serif;
+  letter-spacing: 0;
+  line-height: 1.65;
+}
+
 html[lang='ur'] body,
 html[lang='ur'] h1,
 html[lang='ur'] h2,
 html[lang='ur'] h3,
-html[lang='ur'] h4 {
-  font-family: 'Noto Nastaliq Urdu', Outfit, sans-serif;
+html[lang='ur'] h4,
+html[lang='ur'] .font-serif {
+  font-family: 'Noto Nastaliq Urdu', 'IBM Plex Sans', sans-serif;
   letter-spacing: 0;
+  line-height: 2;
+}
+
+html[lang='ja'] body,
+html[lang='zh'] body,
+html[lang='ja'] h1,
+html[lang='zh'] h1,
+html[lang='ja'] h2,
+html[lang='zh'] h2,
+html[lang='ja'] h3,
+html[lang='zh'] h3,
+html[lang='ja'] .font-serif,
+html[lang='zh'] .font-serif {
+  letter-spacing: 0;
+  line-height: 1.7;
 }
 
 @keyframes rise-in {
@@ -157,11 +186,11 @@ html[lang='ur'] h4 {
 .experience-slider-item {
   flex: 0 0 auto;
   box-sizing: border-box;
-  padding-right: 0.9rem;
+  padding-inline-end: 0.9rem;
 }
 
 .experience-slider-item:last-child {
-  padding-right: 0;
+  padding-inline-end: 0;
 }
 
 .experience-slide {
@@ -337,7 +366,7 @@ html[lang='ur'] h4 {
 }
 
 .section-divider-label {
-  font-family: Syne, system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -406,7 +435,40 @@ body.custom-cursor-active button {
 .large-text { font-size: 118%; }
 .large-text h1 { font-size: clamp(2.75rem, 7vw, 5rem) !important; }
 .large-text p, .large-text li { line-height: 1.75; }
-html[dir='rtl'] .nav-actions, html[dir='rtl'] .hero-actions { flex-direction: row-reverse; }
+/* ---------- RTL / i18n layout fixes ---------- */
+html[dir='rtl'] .nav-actions,
+html[dir='rtl'] .hero-actions {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] {
+  text-align: start;
+}
+
+/* Keep marquee / sliders in physical LTR so translateX math stays correct */
+html[dir='rtl'] .portfolio-marquee-track {
+  animation-name: portfolio-marquee-rtl;
+}
+
+@keyframes portfolio-marquee-rtl {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+html[dir='rtl'] .experience-item:hover {
+  transform: translateX(-0.4rem);
+}
+
+html[dir='rtl'] .section-divider-line::before,
+html[dir='rtl'] .section-divider-line::after {
+  animation-direction: reverse;
+}
+
+/* CJK / RTL: avoid clipping tall script glyphs in clamped quotes */
+html[lang='ar'] .line-clamp-3,
+html[lang='ur'] .line-clamp-3 {
+  line-height: 1.85;
+}
 
 .flower-cursor {
   color: #5A3E8E;
@@ -871,10 +933,11 @@ html[dir='rtl'] .nav-actions, html[dir='rtl'] .hero-actions { flex-direction: ro
 .gradient-backdrop .ux-type {
   top: 58%;
   left: 28%;
-  font-family: Syne, system-ui, sans-serif;
-  font-weight: 800;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-style: italic;
   font-size: 1.85rem;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   color: rgba(90, 62, 142, 0.32);
   animation: ux-float-a 48s ease-in-out infinite;
 }

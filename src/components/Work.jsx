@@ -15,7 +15,7 @@ function ProjectCard({ project, t }) {
   const caseHref = `/case-study/${project.slug}`
 
   return (
-    <article className="portfolio-marquee-card flex h-full flex-col rounded-3xl border border-[#E7E0F2] bg-white p-4 shadow-[0_10px_30px_rgba(70,49,111,0.06)] dark:border-white/10 dark:bg-midnight2">
+    <article className="portfolio-marquee-card flex h-full flex-col rounded-3xl border border-[#E7E0F2] bg-white p-4 text-start shadow-[0_10px_30px_rgba(70,49,111,0.06)] dark:border-white/10 dark:bg-midnight2" dir="auto">
       <p className="mb-3 px-1 text-[0.68rem] font-medium uppercase tracking-[0.14em] text-inkSoft dark:text-[#9C90BC]">{item.meta}</p>
       <h3 className="px-1 font-serif text-2xl dark:text-[#F6F2FC]">
         <a href={caseHref} className="hover:text-violet dark:hover:text-lilac">{projectName}</a>
@@ -81,6 +81,7 @@ export default function Work() {
 
         <div
           className={`portfolio-marquee ${paused ? 'is-paused' : ''}`}
+          dir="ltr"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >

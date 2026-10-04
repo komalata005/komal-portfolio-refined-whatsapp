@@ -195,7 +195,7 @@ export default function CaseStudy({ slug }) {
               {study.decisions.map((item, i) => (
                 <Reveal key={item.title} className="grid gap-3 border-t border-mistLine pt-6 dark:border-white/10 md:grid-cols-[.7fr_1.3fr] md:gap-16">
                   <h3 className="font-serif text-2xl dark:text-[#F6F2FC]">
-                    <span className="mr-3 text-sm text-violet dark:text-lilac">0{i + 1}</span>
+                    <span className="me-3 text-sm text-violet dark:text-lilac">0{i + 1}</span>
                     {item.title}
                   </h3>
                   <p className="leading-8 text-inkSoft dark:text-[#C8BFE3]">{item.body}</p>

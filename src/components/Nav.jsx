@@ -29,7 +29,7 @@ export default function Nav() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="relative text-[0.88rem] font-medium tracking-[0.01em] text-inkSoft transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[1.5px] after:w-0 after:bg-violet after:transition-all after:duration-300 hover:text-violet hover:after:w-full dark:text-[#C8BFE3] dark:hover:text-lilac dark:after:bg-lilac"
+                className="relative text-[0.88rem] font-medium tracking-[0.01em] text-inkSoft transition-colors after:absolute after:-bottom-1 after:start-0 after:h-[1.5px] after:w-0 after:bg-violet after:transition-all after:duration-300 hover:text-violet hover:after:w-full dark:text-[#C8BFE3] dark:hover:text-lilac dark:after:bg-lilac"
               >
                 {l.label}
               </a>

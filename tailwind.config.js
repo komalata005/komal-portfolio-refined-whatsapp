@@ -19,9 +19,9 @@ export default {
         midnight2: '#2E2150',
       },
       fontFamily: {
-        serif: ['Syne', 'system-ui', 'sans-serif'],
-        sans: ['Outfit', 'system-ui', 'sans-serif'],
-        script: ['Syne', 'system-ui', 'sans-serif'],
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"IBM Plex Sans"', 'system-ui', 'sans-serif'],
+        script: ['"Playfair Display"', 'Georgia', 'serif'],
       },
       maxWidth: {
         content: '1120px',

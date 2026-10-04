@@ -214,7 +214,7 @@ export default function Hero() {
       {showContent && (
         <>
           <div className="mx-auto grid max-w-content grid-cols-1 items-center gap-8 px-8 md:grid-cols-[1.2fr_1fr] md:gap-10">
-            <div className="min-w-0 text-left">
+            <div className="min-w-0 text-start">
               <div className={`mb-2 flex flex-wrap items-center justify-start gap-2.5 ${contentShown}`}>
                 <img
                   src="https://komalata01.netlify.app/assets/images/profile-pic.png"
@@ -230,12 +230,12 @@ export default function Hero() {
                 </span>
               </div>
 
-              <h1 className="min-h-[2.2em] max-w-[18ch] text-left font-serif text-[2.15rem] leading-[1.05] tracking-[-0.5px] md:min-h-[1.9em] md:text-[3.1rem] dark:text-[#F6F2FC]">
+              <h1 className="min-h-[2.2em] max-w-[18ch] text-start font-serif text-[2.15rem] leading-[1.05] tracking-[-0.5px] md:min-h-[1.9em] md:text-[3.1rem] dark:text-[#F6F2FC]">
                 {renderHeadline(typedHeadline)}
                 {!headlineDone && <span className="typing-caret" aria-hidden="true">|</span>}
               </h1>
 
-              <p className={`mt-3 max-w-[46ch] text-left text-[1rem] leading-7 text-inkSoft dark:text-[#C8BFE3] ${contentShown}`} style={{ animationDelay: '120ms' }}>
+              <p className={`mt-3 max-w-[46ch] text-start text-[1rem] leading-7 text-inkSoft dark:text-[#C8BFE3] ${contentShown}`} style={{ animationDelay: '120ms' }}>
                 {t.hero.lede}
               </p>
 
@@ -284,7 +284,7 @@ export default function Hero() {
                     )}
                   </a>
 
-                  <div className="mt-2.5 px-0.5 text-left">
+                  <div className="mt-2.5 px-0.5 text-start">
                     <p className="text-[0.58rem] font-semibold uppercase tracking-[0.16em] text-violet dark:text-lilac">Featured project</p>
                     <div className="mt-1 flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
                       <h2 className="font-serif text-[1.15rem] leading-tight">{projectName}</h2>
@@ -340,10 +340,10 @@ export default function Hero() {
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                     <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-violet dark:text-lilac">Background</p>
-                    <p className="font-serif text-[1.65rem] leading-none tracking-[-0.03em] text-ink dark:text-[#F6F2FC]">
+                    <p className="font-serif text-[2.75rem] leading-none tracking-[-0.04em] text-ink dark:text-[#F6F2FC] md:text-[3.25rem]">
                       <Counter value={5} />
                       <span className="text-violet dark:text-lilac">+</span>
-                      <em className="ml-1.5 text-[0.95rem] italic text-violet dark:text-lilac">years</em>
+                      <em className="ms-2 text-[1.15rem] italic text-violet dark:text-lilac md:text-[1.35rem]">years</em>
                     </p>
                     <span className="hidden h-4 w-px bg-[#E4D8F6] dark:bg-white/15 sm:block" aria-hidden="true" />
                     <p className="text-[0.8rem] text-inkSoft dark:text-[#C8BFE3]">Product design across apps & systems</p>

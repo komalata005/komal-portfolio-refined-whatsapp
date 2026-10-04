@@ -21,9 +21,9 @@ export default function Process() {
               key={s.num}
               delay={i * 100}
               className={`border-b border-mistLine py-9 dark:border-white/10 ${
-                i % 2 === 0 ? 'sm:border-r sm:pl-0 sm:pr-8' : 'sm:pl-8 sm:pr-0'
+                i % 2 === 0 ? 'sm:border-e sm:ps-0 sm:pe-8' : 'sm:ps-8 sm:pe-0'
               } ${
-                i % 4 === 0 ? 'lg:border-r lg:pl-0 lg:pr-8' : i % 4 === 3 ? 'lg:border-r-0 lg:pl-8 lg:pr-0' : 'lg:border-r lg:pl-8 lg:pr-8'
+                i % 4 === 0 ? 'lg:border-e lg:ps-0 lg:pe-8' : i % 4 === 3 ? 'lg:border-e-0 lg:ps-8 lg:pe-0' : 'lg:border-e lg:ps-8 lg:pe-8'
               }`}
             >
               <div className="font-serif text-lg italic text-lilac">{s.num}</div>

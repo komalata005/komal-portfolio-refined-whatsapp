@@ -65,6 +65,7 @@ export default function Reviews() {
 
         <div
           className="overflow-hidden rounded-2xl border border-[#E7E0F2]/90 bg-white/40 backdrop-blur-md dark:border-white/10 dark:bg-white/[0.04]"
+          dir="ltr"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >
@@ -73,7 +74,7 @@ export default function Reviews() {
             style={{ transform: `translateX(-${index * 100}%)` }}
           >
             {reviews.map((item) => (
-              <blockquote key={item.id} className="w-full shrink-0 px-4 py-4 md:px-5 md:py-4">
+              <blockquote key={item.id} className="w-full shrink-0 px-4 py-4 text-start md:px-5 md:py-4" dir="auto">
                 <p className="line-clamp-3 text-[0.92rem] leading-6 text-ink dark:text-[#EDE7F8] md:text-[0.95rem] md:leading-7">
                   “{item.quote}”
                 </p>

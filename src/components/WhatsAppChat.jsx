@@ -24,7 +24,7 @@ export default function WhatsAppChat() {
   }
 
   return (
-    <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3">
+    <div className="fixed bottom-5 end-5 z-40 flex flex-col items-end gap-3">
       {open && (
         <form
           onSubmit={send}
@@ -52,7 +52,7 @@ export default function WhatsAppChat() {
                 key={prompt}
                 type="button"
                 onClick={() => openWhatsApp(prompt)}
-                className="rounded-full border border-[#E4D8F6] px-3 py-1.5 text-left text-[0.78rem] text-violet hover:bg-[#F7F3FC] dark:border-white/10 dark:text-lilac dark:hover:bg-white/5"
+                className="rounded-full border border-[#E4D8F6] px-3 py-1.5 text-start text-[0.78rem] text-violet hover:bg-[#F7F3FC] dark:border-white/10 dark:text-lilac dark:hover:bg-white/5"
               >
                 {prompt}
               </button>

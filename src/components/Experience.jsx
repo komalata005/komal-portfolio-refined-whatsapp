@@ -77,6 +77,7 @@ export default function Experience() {
 
         <div
           className="experience-slider"
+          dir="ltr"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >
@@ -96,7 +97,7 @@ export default function Experience() {
                   style={{ width: `${100 / experience.length}%` }}
                 >
                   <div className="glass-shell h-full">
-                    <article className="glass-card flex h-full min-w-0 flex-col p-4 md:p-5">
+                    <article className="glass-card flex h-full min-w-0 flex-col p-4 text-start md:p-5" dir="auto">
                       <div className="flex items-start gap-3">
                         <div className="grid h-11 w-11 shrink-0 place-items-center overflow-hidden rounded-xl border border-white/50 bg-white/80 p-1.5 dark:border-white/10 dark:bg-white/10">
                           {e.logo ? (

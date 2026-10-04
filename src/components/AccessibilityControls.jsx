@@ -55,14 +55,14 @@ export default function AccessibilityControls() {
       {open && (
         <div
           id="accessibility-menu"
-          className="absolute right-0 top-[calc(100%+0.75rem)] w-64 rounded-md border border-mistLine bg-paper p-2 shadow-[0_16px_40px_rgb(31_20_55_/_0.16)] dark:border-white/15 dark:bg-[#241A3D]"
+          className="absolute end-0 top-[calc(100%+0.75rem)] w-64 rounded-md border border-mistLine bg-paper p-2 shadow-[0_16px_40px_rgb(31_20_55_/_0.16)] dark:border-white/15 dark:bg-[#241A3D]"
           aria-label="Accessibility options"
         >
           <p className="px-3 pb-2 pt-1 text-xs font-semibold uppercase tracking-[0.14em] text-inkSoft dark:text-[#C8BFE3]">Accessibility</p>
-          <button type="button" onClick={() => setLarge((value) => !value)} aria-pressed={large} className="flex w-full items-center justify-between rounded px-3 py-2.5 text-left text-sm text-ink transition-colors hover:bg-lilac/20 dark:text-[#EDE7F8] dark:hover:bg-white/10">
+          <button type="button" onClick={() => setLarge((value) => !value)} aria-pressed={large} className="flex w-full items-center justify-between rounded px-3 py-2.5 text-start text-sm text-ink transition-colors hover:bg-lilac/20 dark:text-[#EDE7F8] dark:hover:bg-white/10">
             <span>Larger text</span><span aria-hidden="true" className="font-semibold">{large ? 'A−' : 'A+'}</span>
           </button>
-          <button type="button" onClick={readPage} aria-pressed={speaking} className="flex w-full items-center justify-between rounded px-3 py-2.5 text-left text-sm text-ink transition-colors hover:bg-lilac/20 dark:text-[#EDE7F8] dark:hover:bg-white/10">
+          <button type="button" onClick={readPage} aria-pressed={speaking} className="flex w-full items-center justify-between rounded px-3 py-2.5 text-start text-sm text-ink transition-colors hover:bg-lilac/20 dark:text-[#EDE7F8] dark:hover:bg-white/10">
             <span>{speaking ? 'Stop reading' : 'Read page aloud'}</span>
             <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               {speaking ? <rect x="7" y="7" width="10" height="10" /> : <><path d="M11 5 6 9H3v6h3l5 4V5Z" /><path d="M15.5 8.5a5 5 0 0 1 0 7" /></>}

@@ -41,19 +41,19 @@ export default function DesignSystem() {
           <div className="divide-y divide-mistLine border-y border-mistLine dark:divide-white/10 dark:border-white/10">
             <div className="flex flex-col gap-1.5 py-4 sm:flex-row sm:items-baseline sm:gap-5.5">
               <div className="flex-1 font-serif text-[2.6rem] dark:text-[#F6F2FC]">{s.typeSamples.display}</div>
-              <div className="w-[170px] flex-none text-[0.82rem] text-inkSoft dark:text-[#9C90BC] sm:text-right">Syne · 800 · Display</div>
+              <div className="w-[170px] flex-none text-[0.82rem] text-inkSoft dark:text-[#9C90BC] sm:text-right">Playfair Display · Display</div>
             </div>
             <div className="flex flex-col gap-1.5 py-4 sm:flex-row sm:items-baseline sm:gap-5.5">
               <div className="flex-1 font-serif text-[1.7rem] font-bold dark:text-[#F6F2FC]">{s.typeSamples.heading}</div>
-              <div className="w-[170px] flex-none text-[0.82rem] text-inkSoft dark:text-[#9C90BC] sm:text-right">Syne · 700 · Heading</div>
+              <div className="w-[170px] flex-none text-[0.82rem] text-inkSoft dark:text-[#9C90BC] sm:text-right">Playfair Display · Heading</div>
             </div>
             <div className="flex flex-col gap-1.5 py-4 sm:flex-row sm:items-baseline sm:gap-5.5">
               <div className="flex-1 text-[1.05rem] dark:text-[#F6F2FC]">{s.typeSamples.body}</div>
-              <div className="w-[170px] flex-none text-[0.82rem] text-inkSoft dark:text-[#9C90BC] sm:text-right">Outfit · 400 · Body</div>
+              <div className="w-[170px] flex-none text-[0.82rem] text-inkSoft dark:text-[#9C90BC] sm:text-right">IBM Plex Sans · 400 · Body</div>
             </div>
             <div className="flex flex-col gap-1.5 py-4 sm:flex-row sm:items-baseline sm:gap-5.5">
               <div className="flex-1 text-[0.85rem] font-medium dark:text-[#F6F2FC]">{s.typeSamples.label}</div>
-              <div className="w-[170px] flex-none text-[0.82rem] text-inkSoft dark:text-[#9C90BC] sm:text-right">Outfit · 500 · Label</div>
+              <div className="w-[170px] flex-none text-[0.82rem] text-inkSoft dark:text-[#9C90BC] sm:text-right">IBM Plex Sans · 500 · Label</div>
             </div>
           </div>
         </Reveal>

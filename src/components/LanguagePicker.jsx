@@ -29,7 +29,7 @@ export default function LanguagePicker() {
     <button
       key={l.code}
       onClick={() => pick(l.code)}
-      className={`flex w-full items-center justify-between gap-4 px-3.5 py-2 text-left text-[0.88rem] transition-colors hover:bg-paperTint dark:hover:bg-white/5 ${
+      className={`flex w-full items-center justify-between gap-4 px-3.5 py-2 text-start text-[0.88rem] transition-colors hover:bg-paperTint dark:hover:bg-white/5 ${
         locale === l.code ? 'text-violet dark:text-lilac' : 'text-ink dark:text-[#EDE7F8]'
       }`}
     >
