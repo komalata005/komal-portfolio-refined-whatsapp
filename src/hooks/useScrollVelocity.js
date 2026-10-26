@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 /**
  * Applies a small skew to a container based on how fast the page is
  * scrolling, then settles back to flat. Gives scrolling a sense of weight
- * — fast flicks bend the content slightly, slow scrolling doesn't.
+ *, fast flicks bend the content slightly, slow scrolling doesn't.
  * Writes to a CSS variable so the styling stays in CSS.
  */
 export default function useScrollVelocity(ref, { max = 3, damping = 0.88 } = {}) {

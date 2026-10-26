@@ -30,7 +30,7 @@ function BrowserFrame({ children }) {
 
 /**
  * Renders a small abstract mockup appropriate to the project "kind".
- * These are stand-ins for real screenshots — swap with actual project
+ * These are stand-ins for real screenshots, swap with actual project
  * imagery when available.
  */
 export default function ProjectVisual({ kind }) {

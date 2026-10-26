@@ -1,10 +1,10 @@
 export const translations = {
   en: {
-    nav: { work: 'Work', process: 'Process', experience: 'Experience', system: 'System', about: 'About', contact: 'Get in touch' },
+    nav: { work: 'Work', expertise: 'Expertise', process: 'Process', experience: 'Experience', system: 'System', about: 'About', faq: 'FAQ', contact: 'Get in touch' },
     hero: {
-      roleTag: 'Senior UI/UX Designer',
+      roleTag: 'UI/UX · Product · Mobile Designer',
       headline: 'Interfaces that make hard decisions feel obvious.',
-      lede: "I'm Komal, a senior UI/UX designer based in Karachi with five years spent turning user research into products people actually enjoy. I work close to engineering, because good design rarely survives in isolation from how it gets built.",
+      lede: "I'm Komal, a UI/UX designer and product designer based in Karachi with five years of app design and web product design, turning user research into mobile and SaaS interfaces people actually enjoy. I work close to engineering, because good design rarely survives in isolation from how it gets built.",
       ctaWork: 'See selected work',
       ctaPortfolio: 'Full portfolio ↗',
       statusBadge: 'Open to new roles',
@@ -15,14 +15,14 @@ export const translations = {
     },
     work: {
       title: 'Selected work',
-      subtitle: 'Mobile, web, and enterprise products — spanning research, flows, and high-fidelity UI.',
+      subtitle: 'Mobile, web, and enterprise products, spanning research, flows, and high-fidelity UI.',
       items: {
-        'Nuré': { desc: 'A mental-load reducer for couples and households. End-to-end product design — research, flows, and high-fidelity UI.', meta: 'Mobile app', tags: ['UX research', 'Product design'] },
+        'Nuré': { desc: 'A mental-load reducer for couples and households. End-to-end product design, research, flows, and high-fidelity UI.', meta: 'Mobile app', tags: ['UX research', 'Product design'] },
         'Schedule Edge': { desc: 'Redesign of an ERP system, simplifying complex workflows across multiple modules for a manufacturing business.', meta: 'Website · ERP system', tags: ['Design systems', 'Enterprise UX'] },
         'Octofy': { desc: 'Onboarding flows and core UI design, backed by UX research and usability testing.', meta: 'Mobile app', tags: ['Onboarding', 'Usability testing'] },
         'Carry App': { desc: "A finance app's onboarding flow, shaped by user research and careful interaction design.", meta: 'Mobile app · Finance', tags: ['Interaction design'] },
         'Puffy': { desc: 'Responsive UI design and a component library for an e-commerce storefront.', meta: 'Website · E-commerce', tags: ['Responsive design', 'Component libraries'] },
-        'Break Smart': { desc: 'A wellness case study — wireframes, high-fidelity design, and an interactive prototype.', meta: 'Website', tags: ['Wireframing', 'Prototyping'] },
+        'Break Smart': { desc: 'A wellness case study, wireframes, high-fidelity design, and an interactive prototype.', meta: 'Website', tags: ['Wireframing', 'Prototyping'] },
         'Real Estate': { desc: 'A conversion-focused landing page, designed with an A/B testing rationale behind every decision.', meta: 'Website · Landing page', tags: ['Conversion design'] },
       },
     },
@@ -42,7 +42,7 @@ export const translations = {
       title: 'Experience',
       subtitle: 'Five years moving between UX practice and hands-on frontend work.',
       careerNoteLabel: 'Currently on a career break',
-      careerNote: 'since March 2025 — spent learning and practicing design. Available to join a new team immediately.',
+      careerNote: 'since March 2025, spent learning and practicing design. Available to join a new team immediately.',
       items: {
         'Cipher Impact': { role: 'UI/UX Designer', bullets: ['Led the redesign of an ERP product, simplifying complex workflows across multiple modules', 'Built and maintained a design system to keep the product consistent and speed up delivery', 'Designed responsive layouts with light and dark theme support for desktop and tablet'] },
         'HRSG': { role: 'UI/UX Specialist', bullets: ['Ran user research and interviews to inform product direction and validate decisions', 'Designed web and mobile interfaces in Figma, from onboarding through core tasks', 'Produced wireframes and interactive prototypes for stakeholder review and usability testing'] },
@@ -53,7 +53,7 @@ export const translations = {
     },
     about: {
       title: 'About',
-      p1: "I care about understanding what people need and turning that into design that feels clear and natural. I keep learning, keep asking questions, and bring that curiosity into every project.",
+      p1: 'I care about understanding what people need and turning that into UI/UX and product design that feels clear and natural, across mobile apps, web products, and design systems. I keep learning, keep asking questions, and bring that curiosity into every project.',
       p2: 'Looking to join a team that takes user experience seriously and builds things worth building.',
       eduLine: 'BSc, Software Engineering', eduSchool: 'Sir Syed University of Engineering & Technology',
       langLine: 'Languages: Urdu (fluent), English (upper-intermediate)',
@@ -66,7 +66,7 @@ export const translations = {
     },
     system: {
       title: 'Design system',
-      subtitle: "The tokens and components behind this page — built and documented the same way I'd hand a system to a team.",
+      subtitle: "The tokens and components behind this page, built and documented the same way I'd hand a system to a team.",
       color: 'Color', type: 'Type', buttons: 'Buttons', tags: 'Tags & chips',
       typeSamples: { display: 'Aa Interfaces', heading: 'Selected work', body: 'I care about understanding users.', label: 'Mobile app · Website · ERP' },
       primaryAction: 'Primary action', secondaryAction: 'Secondary action', onDark: 'On dark surface',
@@ -79,7 +79,7 @@ export const translations = {
   },
 
   ur: {
-    nav: { work: 'کام', process: 'طریقہ کار', experience: 'تجربہ', system: 'سسٹم', about: 'تعارف', contact: 'رابطہ کریں' },
+    nav: { work: 'کام', expertise: 'مہارت', process: 'طریقہ کار', experience: 'تجربہ', system: 'سسٹم', about: 'تعارف', faq: 'سوالات', contact: 'رابطہ کریں' },
     hero: {
       roleTag: 'سینئر یو آئی/یو ایکس ڈیزائنر',
       headline: 'ایسے انٹرفیس جو مشکل فیصلوں کو آسان بنا دیں۔',
@@ -92,22 +92,22 @@ export const translations = {
     },
     work: {
       title: 'منتخب کام',
-      subtitle: 'موبائل، ویب اور انٹرپرائز پروڈکٹس — ریسرچ، فلوز اور های فیڈیلٹی یو آئی پر مشتمل۔',
+      subtitle: 'موبائل، ویب اور انٹرپرائز پروڈکٹس, ریسرچ، فلوز اور های فیڈیلٹی یو آئی پر مشتمل۔',
       items: {
-        'Nuré': { desc: 'جوڑوں اور گھرانوں کے لیے ذہنی بوجھ کم کرنے والی ایپ۔ مکمل پروڈکٹ ڈیزائن — ریسرچ، فلوز اور های فیڈیلٹی یو آئی۔', meta: 'موبائل ایپ', tags: ['یوزر ریسرچ', 'پروڈکٹ ڈیزائن'] },
+        'Nuré': { desc: 'جوڑوں اور گھرانوں کے لیے ذہنی بوجھ کم کرنے والی ایپ۔ مکمل پروڈکٹ ڈیزائن, ریسرچ، فلوز اور های فیڈیلٹی یو آئی۔', meta: 'موبائل ایپ', tags: ['یوزر ریسرچ', 'پروڈکٹ ڈیزائن'] },
         'Schedule Edge': { desc: 'ایک مینوفیکچرنگ کاروبار کے لیے ای آر پی سسٹم کی نئے سرے سے ڈیزائننگ، متعدد ماڈیولز میں پیچیدہ ورک فلوز کو آسان بنانا۔', meta: 'ویب سائٹ · ای آر پی سسٹم', tags: ['ڈیزائن سسٹمز', 'انٹرپرائز یو ایکس'] },
         'Octofy': { desc: 'یوزر ریسرچ اور یوزیبلٹی ٹیسٹنگ کی بنیاد پر آن بورڈنگ فلوز اور بنیادی یو آئی ڈیزائن۔', meta: 'موبائل ایپ', tags: ['آن بورڈنگ', 'یوزیبلٹی ٹیسٹنگ'] },
         'Carry App': { desc: 'ایک فنانس ایپ کا آن بورڈنگ فلو، جو یوزر ریسرچ اور باریک بینی سے کیے گئے انٹرایکشن ڈیزائن سے تشکیل پایا۔', meta: 'موبائل ایپ · فنانس', tags: ['انٹرایکشن ڈیزائن'] },
         'Puffy': { desc: 'ایک ای کامرس اسٹور کے لیے ریسپانسو یو آئی ڈیزائن اور کمپوننٹ لائبریری۔', meta: 'ویب سائٹ · ای کامرس', tags: ['ریسپانسو ڈیزائن', 'کمپوننٹ لائبریریز'] },
-        'Break Smart': { desc: 'ایک ویلنیس کیس اسٹڈی — وائرفریمز، های فیڈیلٹی ڈیزائن اور ایک انٹرایکٹو پروٹوٹائپ۔', meta: 'ویب سائٹ', tags: ['وائرفریمنگ', 'پروٹوٹائپنگ'] },
+        'Break Smart': { desc: 'ایک ویلنیس کیس اسٹڈی, وائرفریمز، های فیڈیلٹی ڈیزائن اور ایک انٹرایکٹو پروٹوٹائپ۔', meta: 'ویب سائٹ', tags: ['وائرفریمنگ', 'پروٹوٹائپنگ'] },
         'Real Estate': { desc: 'ایک کنورژن پر مرکوز لینڈنگ پیج، جس کا ہر فیصلہ اے/بی ٹیسٹنگ کی بنیاد پر کیا گیا۔', meta: 'ویب سائٹ · لینڈنگ پیج', tags: ['کنورژن ڈیزائن'] },
       },
     },
     process: {
       title: 'میں کیسے کام کرتی ہوں',
-      subtitle: 'ہر پروجیکٹ میں یہی چار قدم — چاہے موبائل ہو یا انٹرپرائز۔',
+      subtitle: 'ہر پروجیکٹ میں یہی چار قدم, چاہے موبائل ہو یا انٹرپرائز۔',
       steps: [
-        { num: '01', title: 'سمجھنا', body: 'حقیقی مشکلات، عادات اور مقاصد جاننے کے لیے ریسرچ اور انٹرویوز — قیاس آرائی نہیں۔' },
+        { num: '01', title: 'سمجھنا', body: 'حقیقی مشکلات، عادات اور مقاصد جاننے کے لیے ریسرچ اور انٹرویوز, قیاس آرائی نہیں۔' },
         { num: '02', title: 'فلو کی تشکیل', body: 'انفارمیشن آرکیٹیکچر اور وائرفریمز جو صحیح راستے کو ہی واضح راستہ بنا دیں۔' },
         { num: '03', title: 'تفصیل کا ڈیزائن', body: 'Figma میں های فیڈیلٹی یو آئی اور ڈیزائن سسٹمز، جو ہر اسکرین اور حالت میں قائم رہیں۔' },
         { num: '04', title: 'جانچ اور حوالگی', body: 'یوزیبلٹی ٹیسٹنگ، پھر انجینئرنگ کے ساتھ قریبی تعاون تاکہ نیت عملدرآمد میں برقرار رہے۔' },
@@ -119,7 +119,7 @@ export const translations = {
       title: 'تجربہ',
       subtitle: 'پانچ سال یو ایکس پریکٹس اور عملی فرنٹ اینڈ کام کے درمیان۔',
       careerNoteLabel: 'فی الحال کیریئر بریک پر',
-      careerNote: 'مارچ 2025 سے — سیکھنے اور ڈیزائن کی مشق میں مصروف۔ فوری طور پر نئی ٹیم جوائن کرنے کے لیے تیار۔',
+      careerNote: 'مارچ 2025 سے, سیکھنے اور ڈیزائن کی مشق میں مصروف۔ فوری طور پر نئی ٹیم جوائن کرنے کے لیے تیار۔',
       items: {
         'Cipher Impact': { role: 'یو آئی/یو ایکس ڈیزائنر', bullets: ['ایک ای آر پی پروڈکٹ کی نئے سرے سے ڈیزائننگ کی قیادت کی، متعدد ماڈیولز میں پیچیدہ ورک فلوز کو آسان بنایا', 'مصنوعات کو یکساں رکھنے اور ڈیلیوری تیز کرنے کے لیے ڈیزائن سسٹم بنایا اور برقرار رکھا', 'ڈیسک ٹاپ اور ٹیبلٹ کے لیے لائٹ اور ڈارک تھیم کے ساتھ ریسپانسو لے آؤٹ ڈیزائن کیے'] },
         'HRSG': { role: 'یو آئی/یو ایکس اسپیشلسٹ', bullets: ['پروڈکٹ کی سمت طے کرنے اور فیصلوں کی تصدیق کے لیے یوزر ریسرچ اور انٹرویوز کیے', 'Figma میں ویب اور موبائل انٹرفیس ڈیزائن کیے، آن بورڈنگ سے لے کر بنیادی کاموں تک', 'اسٹیک ہولڈر ریویو اور یوزیبلٹی ٹیسٹنگ کے لیے وائرفریمز اور انٹرایکٹو پروٹوٹائپس تیار کیے'] },
@@ -130,7 +130,7 @@ export const translations = {
     },
     about: {
       title: 'تعارف',
-      p1: 'مجھے یوزرز کو سمجھنے کی فکر رہتی ہے — ان کی مشکلات، عادات اور مقاصد — اور اسے ایسے ڈیزائن میں بدلنا جو بہترین انداز میں واضح محسوس ہو۔ میں ہمیشہ سیکھتی رہتی ہوں، سوال کرتی رہتی ہوں، اور یہی تجسس ہر پروجیکٹ میں لاتی ہوں۔',
+      p1: 'مجھے یوزرز کو سمجھنے کی فکر رہتی ہے, ان کی مشکلات، عادات اور مقاصد, اور اسے ایسے ڈیزائن میں بدلنا جو بہترین انداز میں واضح محسوس ہو۔ میں ہمیشہ سیکھتی رہتی ہوں، سوال کرتی رہتی ہوں، اور یہی تجسس ہر پروجیکٹ میں لاتی ہوں۔',
       p2: 'ایسی ٹیم تلاش کر رہی ہوں جو یوزر ایکسپیرینس کو سنجیدگی سے لے اور واقعی قابلِ قدر چیزیں بنائے۔',
       eduLine: 'بی ایس سی، سافٹ ویئر انجینئرنگ', eduSchool: 'سر سید یونیورسٹی آف انجینئرنگ اینڈ ٹیکنالوجی',
       langLine: 'زبانیں: اردو (روانی سے)، انگریزی (اپر انٹرمیڈیٹ)',
@@ -143,7 +143,7 @@ export const translations = {
     },
     system: {
       title: 'ڈیزائن سسٹم',
-      subtitle: 'اس صفحے کے پیچھے موجود ٹوکنز اور کمپوننٹس — بالکل اسی طرح بنائے اور دستاویزی کیے گئے جیسے کسی ٹیم کو سونپے جاتے ہیں۔',
+      subtitle: 'اس صفحے کے پیچھے موجود ٹوکنز اور کمپوننٹس, بالکل اسی طرح بنائے اور دستاویزی کیے گئے جیسے کسی ٹیم کو سونپے جاتے ہیں۔',
       color: 'رنگ', type: 'ٹائپ', buttons: 'بٹنز', tags: 'ٹیگز اور چپس',
       typeSamples: { display: 'Aa Interfaces', heading: 'منتخب کام', body: 'مجھے یوزرز کو سمجھنے کی فکر رہتی ہے۔', label: 'موبائل ایپ · ویب سائٹ · ای آر پی' },
       primaryAction: 'بنیادی عمل', secondaryAction: 'ثانوی عمل', onDark: 'گہری سطح پر',
@@ -156,7 +156,7 @@ export const translations = {
   },
 
   ar: {
-    nav: { work: 'الأعمال', process: 'العملية', experience: 'الخبرة', system: 'نظام التصميم', about: 'نبذة عني', contact: 'تواصل معي' },
+    nav: { work: 'الأعمال', expertise: 'الخبرات', process: 'العملية', experience: 'الخبرة', system: 'نظام التصميم', about: 'نبذة عني', faq: 'الأسئلة', contact: 'تواصل معي' },
     hero: {
       roleTag: 'مصممة واجهات وتجربة مستخدم أولى',
       headline: 'واجهات تجعل القرارات الصعبة تبدو بديهية.',
@@ -169,14 +169,14 @@ export const translations = {
     },
     work: {
       title: 'أعمال مختارة',
-      subtitle: 'منتجات للهواتف والويب والمؤسسات — من البحث والتدفقات إلى واجهات عالية الدقة.',
+      subtitle: 'منتجات للهواتف والويب والمؤسسات, من البحث والتدفقات إلى واجهات عالية الدقة.',
       items: {
-        'Nuré': { desc: 'تطبيق يخفف العبء الذهني عن الأزواج والأسر. تصميم منتج متكامل — بحث، تدفقات، وواجهة عالية الدقة.', meta: 'تطبيق جوال', tags: ['أبحاث المستخدمين', 'تصميم المنتج'] },
+        'Nuré': { desc: 'تطبيق يخفف العبء الذهني عن الأزواج والأسر. تصميم منتج متكامل, بحث، تدفقات، وواجهة عالية الدقة.', meta: 'تطبيق جوال', tags: ['أبحاث المستخدمين', 'تصميم المنتج'] },
         'Schedule Edge': { desc: 'إعادة تصميم نظام تخطيط موارد المؤسسات، مع تبسيط سير العمل المعقّد عبر وحدات متعددة لشركة تصنيع.', meta: 'موقع إلكتروني · نظام ERP', tags: ['أنظمة التصميم', 'تجربة مستخدم للمؤسسات'] },
         'Octofy': { desc: 'تدفقات تهيئة المستخدم وتصميم واجهة أساسي، مدعومة بأبحاث المستخدمين واختبارات قابلية الاستخدام.', meta: 'تطبيق جوال', tags: ['تهيئة المستخدم', 'اختبار قابلية الاستخدام'] },
         'Carry App': { desc: 'تدفق تهيئة تطبيق مالي، تشكّل من خلال أبحاث المستخدمين وتصميم تفاعل دقيق.', meta: 'تطبيق جوال · مالية', tags: ['تصميم التفاعل'] },
         'Puffy': { desc: 'تصميم واجهة متجاوب ومكتبة مكونات لمتجر إلكتروني.', meta: 'موقع إلكتروني · تجارة إلكترونية', tags: ['تصميم متجاوب', 'مكتبات المكونات'] },
-        'Break Smart': { desc: 'دراسة حالة في مجال العافية — إطارات سلكية، تصميم عالي الدقة، ونموذج أولي تفاعلي.', meta: 'موقع إلكتروني', tags: ['الإطارات السلكية', 'النماذج الأولية'] },
+        'Break Smart': { desc: 'دراسة حالة في مجال العافية, إطارات سلكية، تصميم عالي الدقة، ونموذج أولي تفاعلي.', meta: 'موقع إلكتروني', tags: ['الإطارات السلكية', 'النماذج الأولية'] },
         'Real Estate': { desc: 'صفحة هبوط تركز على التحويل، صُممت بناءً على منطق اختبار A/B لكل قرار.', meta: 'موقع إلكتروني · صفحة هبوط', tags: ['تصميم التحويل'] },
       },
     },
@@ -184,7 +184,7 @@ export const translations = {
       title: 'كيف أعمل',
       subtitle: 'نفس الخطوات الأربع في كل مشروع، سواء كان للجوال أو للمؤسسات.',
       steps: [
-        { num: '01', title: 'الفهم', body: 'بحث ومقابلات للوصول إلى الإحباطات والعادات والأهداف الحقيقية — وليس الافتراضات.' },
+        { num: '01', title: 'الفهم', body: 'بحث ومقابلات للوصول إلى الإحباطات والعادات والأهداف الحقيقية, وليس الافتراضات.' },
         { num: '02', title: 'تشكيل التدفق', body: 'بنية معلومات وإطارات سلكية تجعل المسار الصحيح هو المسار الواضح.' },
         { num: '03', title: 'تصميم التفاصيل', body: 'واجهة عالية الدقة وأنظمة تصميم في Figma، مبنية لتصمد عبر الشاشات والحالات المختلفة.' },
         { num: '04', title: 'الاختبار والتسليم', body: 'اختبار قابلية الاستخدام، ثم تعاون وثيق مع فريق الهندسة لضمان بقاء الفكرة كما هي عند التنفيذ.' },
@@ -196,7 +196,7 @@ export const translations = {
       title: 'الخبرة',
       subtitle: 'خمس سنوات تنقّلت فيها بين ممارسة تجربة المستخدم والعمل العملي في الواجهة الأمامية.',
       careerNoteLabel: 'حالياً في استراحة مهنية',
-      careerNote: 'منذ مارس 2025 — أمضيتها في التعلم وممارسة التصميم. جاهزة للانضمام إلى فريق جديد فوراً.',
+      careerNote: 'منذ مارس 2025, أمضيتها في التعلم وممارسة التصميم. جاهزة للانضمام إلى فريق جديد فوراً.',
       items: {
         'Cipher Impact': { role: 'مصممة واجهات وتجربة مستخدم', bullets: ['قادت إعادة تصميم منتج ERP، مبسّطةً سير العمل المعقّد عبر وحدات متعددة', 'بنت وحافظت على نظام تصميم للحفاظ على اتساق المنتج وتسريع التسليم', 'صممت تخطيطات متجاوبة تدعم الوضعين الفاتح والداكن لأجهزة سطح المكتب والأجهزة اللوحية'] },
         'HRSG': { role: 'أخصائية واجهات وتجربة مستخدم', bullets: ['أجرت أبحاث المستخدمين والمقابلات لتوجيه اتجاه المنتج والتحقق من القرارات', 'صممت واجهات الويب والجوال في Figma، من التهيئة وحتى المهام الأساسية', 'أعدّت إطارات سلكية ونماذج أولية تفاعلية لعروض أصحاب المصلحة واختبارات قابلية الاستخدام'] },
@@ -207,7 +207,7 @@ export const translations = {
     },
     about: {
       title: 'نبذة عني',
-      p1: 'يهمني فهم المستخدمين — إحباطاتهم وعاداتهم وأهدافهم — وتحويل ذلك إلى تصميم يبدو بديهياً بأفضل طريقة ممكنة. أتعلم باستمرار، وأتساءل دائماً، وأحمل هذا الفضول إلى كل مشروع أعمل عليه.',
+      p1: 'يهمني فهم المستخدمين, إحباطاتهم وعاداتهم وأهدافهم, وتحويل ذلك إلى تصميم يبدو بديهياً بأفضل طريقة ممكنة. أتعلم باستمرار، وأتساءل دائماً، وأحمل هذا الفضول إلى كل مشروع أعمل عليه.',
       p2: 'أبحث عن فريق يأخذ تجربة المستخدم على محمل الجد ويبني أشياء تستحق أن تُبنى.',
       eduLine: 'بكالوريوس، هندسة برمجيات', eduSchool: 'Sir Syed University of Engineering & Technology',
       langLine: 'اللغات: الأردية (بطلاقة)، الإنجليزية (فوق المتوسط)',
@@ -220,7 +220,7 @@ export const translations = {
     },
     system: {
       title: 'نظام التصميم',
-      subtitle: 'الرموز والمكونات وراء هذه الصفحة — مبنية وموثقة تماماً كما أسلّم نظاماً لفريق عمل.',
+      subtitle: 'الرموز والمكونات وراء هذه الصفحة, مبنية وموثقة تماماً كما أسلّم نظاماً لفريق عمل.',
       color: 'اللون', type: 'الطباعة', buttons: 'الأزرار', tags: 'الوسوم والشرائح',
       typeSamples: { display: 'Aa Interfaces', heading: 'أعمال مختارة', body: 'يهمني فهم المستخدمين.', label: 'تطبيق جوال · موقع إلكتروني · ERP' },
       primaryAction: 'إجراء أساسي', secondaryAction: 'إجراء ثانوي', onDark: 'على سطح داكن',
@@ -233,7 +233,7 @@ export const translations = {
   },
 
   ru: {
-    nav: { work: 'Работы', process: 'Процесс', experience: 'Опыт', system: 'Система', about: 'Обо мне', contact: 'Связаться' },
+    nav: { work: 'Работы', expertise: 'Экспертиза', process: 'Процесс', experience: 'Опыт', system: 'Система', about: 'Обо мне', faq: 'FAQ', contact: 'Связаться' },
     hero: {
       roleTag: 'Старший UI/UX-дизайнер',
       headline: 'Интерфейсы, из-за которых сложные решения кажутся очевидными.',
@@ -246,22 +246,22 @@ export const translations = {
     },
     work: {
       title: 'Избранные работы',
-      subtitle: 'Мобильные, веб- и корпоративные продукты — от исследований до готового интерфейса.',
+      subtitle: 'Мобильные, веб- и корпоративные продукты, от исследований до готового интерфейса.',
       items: {
-        'Nuré': { desc: 'Приложение для снижения ментальной нагрузки для пар и семей. Полный цикл дизайна продукта — исследование, сценарии и финальный интерфейс.', meta: 'Мобильное приложение', tags: ['Исследование пользователей', 'Дизайн продукта'] },
+        'Nuré': { desc: 'Приложение для снижения ментальной нагрузки для пар и семей. Полный цикл дизайна продукта, исследование, сценарии и финальный интерфейс.', meta: 'Мобильное приложение', tags: ['Исследование пользователей', 'Дизайн продукта'] },
         'Schedule Edge': { desc: 'Редизайн ERP-системы, упрощение сложных рабочих процессов в нескольких модулях для производственной компании.', meta: 'Веб-сайт · ERP-система', tags: ['Дизайн-системы', 'Корпоративный UX'] },
         'Octofy': { desc: 'Онбординг и основной UI-дизайн, основанные на исследованиях пользователей и юзабилити-тестировании.', meta: 'Мобильное приложение', tags: ['Онбординг', 'Юзабилити-тестирование'] },
         'Carry App': { desc: 'Онбординг финансового приложения, разработанный на основе пользовательских исследований и тщательного дизайна взаимодействия.', meta: 'Мобильное приложение · Финансы', tags: ['Дизайн взаимодействия'] },
         'Puffy': { desc: 'Адаптивный UI-дизайн и библиотека компонентов для интернет-магазина.', meta: 'Веб-сайт · Электронная коммерция', tags: ['Адаптивный дизайн', 'Библиотеки компонентов'] },
-        'Break Smart': { desc: 'Кейс в сфере велнеса — вайрфреймы, финальный дизайн и интерактивный прототип.', meta: 'Веб-сайт', tags: ['Вайрфрейминг', 'Прототипирование'] },
+        'Break Smart': { desc: 'Кейс в сфере велнеса, вайрфреймы, финальный дизайн и интерактивный прототип.', meta: 'Веб-сайт', tags: ['Вайрфрейминг', 'Прототипирование'] },
         'Real Estate': { desc: 'Посадочная страница, ориентированная на конверсию, каждое решение обосновано A/B-тестированием.', meta: 'Веб-сайт · Посадочная страница', tags: ['Дизайн конверсии'] },
       },
     },
     process: {
       title: 'Как я работаю',
-      subtitle: 'Одни и те же четыре шага в каждом проекте — будь то мобильное приложение или корпоративный продукт.',
+      subtitle: 'Одни и те же четыре шага в каждом проекте, будь то мобильное приложение или корпоративный продукт.',
       steps: [
-        { num: '01', title: 'Понять', body: 'Исследования и интервью, чтобы выявить реальные проблемы, привычки и цели — а не предположения.' },
+        { num: '01', title: 'Понять', body: 'Исследования и интервью, чтобы выявить реальные проблемы, привычки и цели, а не предположения.' },
         { num: '02', title: 'Сформировать сценарий', body: 'Информационная архитектура и вайрфреймы, делающие правильный путь очевидным.' },
         { num: '03', title: 'Проработать детали', body: 'Финальный UI и дизайн-системы в Figma, устойчивые ко всем экранам и состояниям.' },
         { num: '04', title: 'Протестировать и передать', body: 'Юзабилити-тестирование, затем тесное сотрудничество с разработчиками, чтобы замысел сохранился при реализации.' },
@@ -273,10 +273,10 @@ export const translations = {
       title: 'Опыт',
       subtitle: 'Пять лет между UX-практикой и практической фронтенд-работой.',
       careerNoteLabel: 'Сейчас в перерыве в карьере',
-      careerNote: 'с марта 2025 года — время на обучение и практику в дизайне. Готова присоединиться к новой команде немедленно.',
+      careerNote: 'с марта 2025 года, время на обучение и практику в дизайне. Готова присоединиться к новой команде немедленно.',
       items: {
         'Cipher Impact': { role: 'UI/UX-дизайнер', bullets: ['Руководила редизайном ERP-продукта, упрощая сложные рабочие процессы в нескольких модулях', 'Создала и поддерживала дизайн-систему для единообразия продукта и ускорения разработки', 'Разработала адаптивные макеты со светлой и тёмной темой для настольных устройств и планшетов'] },
-        'HRSG': { role: 'UI/UX-специалист', bullets: ['Проводила исследования пользователей и интервью для определения направления продукта и проверки решений', 'Разрабатывала веб- и мобильные интерфейсы в Figma — от онбординга до основных задач', 'Готовила вайрфреймы и интерактивные прототипы для обзоров с заинтересованными сторонами и юзабилити-тестирования'] },
+        'HRSG': { role: 'UI/UX-специалист', bullets: ['Проводила исследования пользователей и интервью для определения направления продукта и проверки решений', 'Разрабатывала веб- и мобильные интерфейсы в Figma, от онбординга до основных задач', 'Готовила вайрфреймы и интерактивные прототипы для обзоров с заинтересованными сторонами и юзабилити-тестирования'] },
         'Groupshop': { role: 'UI-разработчик', bullets: ['Создавала адаптивные фронтенд-интерфейсы с использованием CSS, SCSS, Bootstrap и React.js', 'Работала по процессу «от дизайна к коду», сохраняя точность дизайна на всех размерах экрана', 'Сотрудничала с командой с использованием Git'] },
         'Botsify': { role: 'Графический дизайнер', bullets: ['Создавала графику для соцсетей, дизайн сайтов и наборы иконок для SaaS-продукта', 'Готовила прототипы и визуальные макеты в Figma'] },
         'PIA': { role: 'Структурированное обучение', bullets: ['Прошла структурированное обучение по системам Oracle в рамках инженерного образования'] },
@@ -284,7 +284,7 @@ export const translations = {
     },
     about: {
       title: 'Обо мне',
-      p1: 'Мне важно понимать пользователей — их проблемы, привычки и цели — и превращать это в дизайн, который кажется максимально естественным. Я постоянно учусь, задаю вопросы и привношу это любопытство в каждый проект.',
+      p1: 'Мне важно понимать пользователей, их проблемы, привычки и цели, и превращать это в дизайн, который кажется максимально естественным. Я постоянно учусь, задаю вопросы и привношу это любопытство в каждый проект.',
       p2: 'Ищу команду, которая серьёзно относится к пользовательскому опыту и создаёт то, что действительно стоит создавать.',
       eduLine: 'Бакалавр, программная инженерия', eduSchool: 'Sir Syed University of Engineering & Technology',
       langLine: 'Языки: урду (свободно), английский (выше среднего)',
@@ -297,7 +297,7 @@ export const translations = {
     },
     system: {
       title: 'Дизайн-система',
-      subtitle: 'Токены и компоненты этой страницы — созданы и задокументированы так же, как я бы передала систему команде.',
+      subtitle: 'Токены и компоненты этой страницы, созданы и задокументированы так же, как я бы передала систему команде.',
       color: 'Цвет', type: 'Типографика', buttons: 'Кнопки', tags: 'Теги и чипы',
       typeSamples: { display: 'Aa Interfaces', heading: 'Избранные работы', body: 'Мне важно понимать пользователей.', label: 'Мобильное приложение · Веб-сайт · ERP' },
       primaryAction: 'Основное действие', secondaryAction: 'Второстепенное действие', onDark: 'На тёмном фоне',
@@ -310,7 +310,7 @@ export const translations = {
   },
 
   ja: {
-    nav: { work: '実績', process: 'プロセス', experience: '経歴', system: 'デザインシステム', about: '自己紹介', contact: 'お問い合わせ' },
+    nav: { work: '実績', expertise: '専門領域', process: 'プロセス', experience: '経歴', system: 'デザインシステム', about: '自己紹介', faq: 'FAQ', contact: 'お問い合わせ' },
     hero: {
       roleTag: 'シニアUI/UXデザイナー',
       headline: '難しい決断も当たり前に感じさせるインターフェース。',
@@ -323,14 +323,14 @@ export const translations = {
     },
     work: {
       title: '実績',
-      subtitle: 'モバイル、ウェブ、エンタープライズ製品 — リサーチ、フロー、高精度UIまで。',
+      subtitle: 'モバイル、ウェブ、エンタープライズ製品, リサーチ、フロー、高精度UIまで。',
       items: {
         'Nuré': { desc: 'カップルや家庭のための心理的負担軽減アプリ。リサーチからフロー、高精度UIまで一貫したプロダクトデザイン。', meta: 'モバイルアプリ', tags: ['ユーザーリサーチ', 'プロダクトデザイン'] },
         'Schedule Edge': { desc: '製造業向けERPシステムの再設計。複数モジュールにまたがる複雑な業務フローを簡素化。', meta: 'ウェブサイト・ERPシステム', tags: ['デザインシステム', 'エンタープライズUX'] },
         'Octofy': { desc: 'ユーザーリサーチとユーザビリティテストに基づくオンボーディングフローと基本UIデザイン。', meta: 'モバイルアプリ', tags: ['オンボーディング', 'ユーザビリティテスト'] },
         'Carry App': { desc: 'ユーザーリサーチと丁寧なインタラクションデザインによって形作られた金融アプリのオンボーディングフロー。', meta: 'モバイルアプリ・金融', tags: ['インタラクションデザイン'] },
         'Puffy': { desc: 'ECストア向けのレスポンシブUIデザインとコンポーネントライブラリ。', meta: 'ウェブサイト・ECサイト', tags: ['レスポンシブデザイン', 'コンポーネントライブラリ'] },
-        'Break Smart': { desc: 'ウェルネス分野のケーススタディ — ワイヤーフレーム、高精度デザイン、インタラクティブプロトタイプ。', meta: 'ウェブサイト', tags: ['ワイヤーフレーム', 'プロトタイピング'] },
+        'Break Smart': { desc: 'ウェルネス分野のケーススタディ, ワイヤーフレーム、高精度デザイン、インタラクティブプロトタイプ。', meta: 'ウェブサイト', tags: ['ワイヤーフレーム', 'プロトタイピング'] },
         'Real Estate': { desc: 'A/Bテストの根拠に基づいて設計された、コンバージョン重視のランディングページ。', meta: 'ウェブサイト・ランディングページ', tags: ['コンバージョンデザイン'] },
       },
     },
@@ -350,7 +350,7 @@ export const translations = {
       title: '経歴',
       subtitle: 'UXの実践とハンズオンのフロントエンド業務を行き来した5年間。',
       careerNoteLabel: '現在キャリアブレイク中',
-      careerNote: '2025年3月から — デザインの学習と実践に取り組んでいます。即日新しいチームに参加可能です。',
+      careerNote: '2025年3月から, デザインの学習と実践に取り組んでいます。即日新しいチームに参加可能です。',
       items: {
         'Cipher Impact': { role: 'UI/UXデザイナー', bullets: ['ERPプロダクトの再設計を主導し、複数モジュールにまたがる複雑な業務フローを簡素化', '一貫性のあるプロダクトと迅速な提供のためのデザインシステムを構築・維持', 'デスクトップとタブレット向けにライト・ダークテーマ対応のレスポンシブレイアウトを設計'] },
         'HRSG': { role: 'UI/UXスペシャリスト', bullets: ['プロダクトの方向性を決め判断を検証するためのユーザーリサーチとインタビューを実施', 'オンボーディングから主要タスクまで、Figmaでウェブ・モバイルインターフェースを設計', 'ステークホルダーレビューとユーザビリティテストのためのワイヤーフレームとインタラクティブプロトタイプを作成'] },
@@ -374,7 +374,7 @@ export const translations = {
     },
     system: {
       title: 'デザインシステム',
-      subtitle: 'このページを支えるトークンとコンポーネント — チームに引き継ぐシステムと同じように構築・文書化しています。',
+      subtitle: 'このページを支えるトークンとコンポーネント, チームに引き継ぐシステムと同じように構築・文書化しています。',
       color: 'カラー', type: 'タイポグラフィ', buttons: 'ボタン', tags: 'タグ・チップ',
       typeSamples: { display: 'Aa Interfaces', heading: '実績', body: 'ユーザーを理解することを大切にしています。', label: 'モバイルアプリ・ウェブサイト・ERP' },
       primaryAction: 'プライマリアクション', secondaryAction: 'セカンダリアクション', onDark: 'ダーク背景上',
@@ -387,7 +387,7 @@ export const translations = {
   },
 
   de: {
-    nav: { work: 'Arbeiten', process: 'Prozess', experience: 'Erfahrung', system: 'System', about: 'Über mich', contact: 'Kontakt aufnehmen' },
+    nav: { work: 'Arbeiten', expertise: 'Expertise', process: 'Prozess', experience: 'Erfahrung', system: 'System', about: 'Über mich', faq: 'FAQ', contact: 'Kontakt aufnehmen' },
     hero: {
       roleTag: 'Senior UI/UX-Designerin',
       headline: 'Interfaces, die schwierige Entscheidungen selbstverständlich wirken lassen.',
@@ -400,22 +400,22 @@ export const translations = {
     },
     work: {
       title: 'Ausgewählte Arbeiten',
-      subtitle: 'Mobile, Web- und Unternehmensprodukte — von Forschung über Abläufe bis zu hochwertiger UI.',
+      subtitle: 'Mobile, Web- und Unternehmensprodukte, von Forschung über Abläufe bis zu hochwertiger UI.',
       items: {
-        'Nuré': { desc: 'Eine App zur Reduzierung der mentalen Last für Paare und Haushalte. Vollständiges Produktdesign — Forschung, Abläufe und High-Fidelity-UI.', meta: 'Mobile App', tags: ['Nutzerforschung', 'Produktdesign'] },
+        'Nuré': { desc: 'Eine App zur Reduzierung der mentalen Last für Paare und Haushalte. Vollständiges Produktdesign, Forschung, Abläufe und High-Fidelity-UI.', meta: 'Mobile App', tags: ['Nutzerforschung', 'Produktdesign'] },
         'Schedule Edge': { desc: 'Neugestaltung eines ERP-Systems, Vereinfachung komplexer Arbeitsabläufe über mehrere Module für ein Fertigungsunternehmen.', meta: 'Website · ERP-System', tags: ['Design-Systeme', 'Enterprise UX'] },
         'Octofy': { desc: 'Onboarding-Abläufe und zentrales UI-Design, gestützt durch Nutzerforschung und Usability-Tests.', meta: 'Mobile App', tags: ['Onboarding', 'Usability-Tests'] },
         'Carry App': { desc: 'Der Onboarding-Ablauf einer Finanz-App, geprägt durch Nutzerforschung und sorgfältiges Interaktionsdesign.', meta: 'Mobile App · Finanzen', tags: ['Interaktionsdesign'] },
         'Puffy': { desc: 'Responsives UI-Design und eine Komponentenbibliothek für einen Online-Shop.', meta: 'Website · E-Commerce', tags: ['Responsives Design', 'Komponentenbibliotheken'] },
-        'Break Smart': { desc: 'Eine Wellness-Fallstudie — Wireframes, High-Fidelity-Design und ein interaktiver Prototyp.', meta: 'Website', tags: ['Wireframing', 'Prototyping'] },
+        'Break Smart': { desc: 'Eine Wellness-Fallstudie, Wireframes, High-Fidelity-Design und ein interaktiver Prototyp.', meta: 'Website', tags: ['Wireframing', 'Prototyping'] },
         'Real Estate': { desc: 'Eine conversion-orientierte Landingpage, jede Entscheidung basierend auf A/B-Test-Ergebnissen.', meta: 'Website · Landingpage', tags: ['Conversion-Design'] },
       },
     },
     process: {
       title: 'Wie ich arbeite',
-      subtitle: 'Bei jedem Projekt dieselben vier Schritte — ob mobil oder Unternehmenslösung.',
+      subtitle: 'Bei jedem Projekt dieselben vier Schritte, ob mobil oder Unternehmenslösung.',
       steps: [
-        { num: '01', title: 'Verstehen', body: 'Recherche und Interviews, um echte Frustrationen, Gewohnheiten und Ziele zu erkennen — keine Annahmen.' },
+        { num: '01', title: 'Verstehen', body: 'Recherche und Interviews, um echte Frustrationen, Gewohnheiten und Ziele zu erkennen, keine Annahmen.' },
         { num: '02', title: 'Ablauf gestalten', body: 'Informationsarchitektur und Wireframes, die den richtigen Weg zum offensichtlichen Weg machen.' },
         { num: '03', title: 'Detail gestalten', body: 'High-Fidelity-UI und Design-Systeme in Figma, gebaut, um über Bildschirme und Zustände hinweg zu bestehen.' },
         { num: '04', title: 'Testen und übergeben', body: 'Usability-Tests, dann enge Zusammenarbeit mit der Entwicklung, damit die Absicht bei der Umsetzung erhalten bleibt.' },
@@ -427,7 +427,7 @@ export const translations = {
       title: 'Erfahrung',
       subtitle: 'Fünf Jahre zwischen UX-Praxis und praktischer Frontend-Arbeit.',
       careerNoteLabel: 'Derzeit in einer Karrierepause',
-      careerNote: 'seit März 2025 — Zeit zum Lernen und Üben von Design genutzt. Sofort verfügbar für ein neues Team.',
+      careerNote: 'seit März 2025, Zeit zum Lernen und Üben von Design genutzt. Sofort verfügbar für ein neues Team.',
       items: {
         'Cipher Impact': { role: 'UI/UX-Designerin', bullets: ['Leitete die Neugestaltung eines ERP-Produkts, vereinfachte komplexe Arbeitsabläufe über mehrere Module hinweg', 'Erstellte und pflegte ein Design-System, um das Produkt konsistent zu halten und die Lieferung zu beschleunigen', 'Gestaltete responsive Layouts mit Unterstützung für helle und dunkle Themes für Desktop und Tablet'] },
         'HRSG': { role: 'UI/UX-Spezialistin', bullets: ['Führte Nutzerforschung und Interviews durch, um die Produktrichtung zu bestimmen und Entscheidungen zu validieren', 'Gestaltete Web- und Mobile-Interfaces in Figma, vom Onboarding bis zu Kernaufgaben', 'Erstellte Wireframes und interaktive Prototypen für Stakeholder-Reviews und Usability-Tests'] },
@@ -438,7 +438,7 @@ export const translations = {
     },
     about: {
       title: 'Über mich',
-      p1: 'Mir liegt es am Herzen, Nutzer zu verstehen — ihre Frustrationen, Gewohnheiten und Ziele — und daraus Design zu machen, das sich auf die bestmögliche Weise selbstverständlich anfühlt. Ich lerne ständig dazu, hinterfrage stets und bringe diese Neugier in jedes Projekt ein.',
+      p1: 'Mir liegt es am Herzen, Nutzer zu verstehen, ihre Frustrationen, Gewohnheiten und Ziele, und daraus Design zu machen, das sich auf die bestmögliche Weise selbstverständlich anfühlt. Ich lerne ständig dazu, hinterfrage stets und bringe diese Neugier in jedes Projekt ein.',
       p2: 'Auf der Suche nach einem Team, das User Experience ernst nimmt und Dinge baut, die es wert sind, gebaut zu werden.',
       eduLine: 'BSc, Softwaretechnik', eduSchool: 'Sir Syed University of Engineering & Technology',
       langLine: 'Sprachen: Urdu (fließend), Englisch (gehobenes Mittelstufenniveau)',
@@ -451,7 +451,7 @@ export const translations = {
     },
     system: {
       title: 'Design-System',
-      subtitle: 'Die Tokens und Komponenten hinter dieser Seite — erstellt und dokumentiert genauso, wie ich ein System an ein Team übergeben würde.',
+      subtitle: 'Die Tokens und Komponenten hinter dieser Seite, erstellt und dokumentiert genauso, wie ich ein System an ein Team übergeben würde.',
       color: 'Farbe', type: 'Typografie', buttons: 'Buttons', tags: 'Tags & Chips',
       typeSamples: { display: 'Aa Interfaces', heading: 'Ausgewählte Arbeiten', body: 'Mir liegt es am Herzen, Nutzer zu verstehen.', label: 'Mobile App · Website · ERP' },
       primaryAction: 'Primäre Aktion', secondaryAction: 'Sekundäre Aktion', onDark: 'Auf dunkler Fläche',
@@ -464,7 +464,7 @@ export const translations = {
   },
 
   zh: {
-    nav: { work: '作品', process: '流程', experience: '经历', system: '设计系统', about: '关于我', contact: '联系我' },
+    nav: { work: '作品', expertise: '专长', process: '流程', experience: '经历', system: '设计系统', about: '关于我', faq: '常见问题', contact: '联系我' },
     hero: {
       roleTag: '高级UI/UX设计师',
       headline: '让复杂决策变得理所当然的界面设计。',
@@ -477,14 +477,14 @@ export const translations = {
     },
     work: {
       title: '精选作品',
-      subtitle: '移动端、网页与企业级产品 — 涵盖研究、流程与高保真界面设计。',
+      subtitle: '移动端、网页与企业级产品, 涵盖研究、流程与高保真界面设计。',
       items: {
-        'Nuré': { desc: '一款为情侣和家庭减轻心理负担的应用。端到端产品设计 — 研究、流程与高保真界面。', meta: '移动应用', tags: ['用户研究', '产品设计'] },
+        'Nuré': { desc: '一款为情侣和家庭减轻心理负担的应用。端到端产品设计, 研究、流程与高保真界面。', meta: '移动应用', tags: ['用户研究', '产品设计'] },
         'Schedule Edge': { desc: '为一家制造企业重新设计ERP系统，简化多个模块中的复杂工作流程。', meta: '网站·ERP系统', tags: ['设计系统', '企业级用户体验'] },
         'Octofy': { desc: '基于用户研究和可用性测试的引导流程与核心界面设计。', meta: '移动应用', tags: ['引导流程', '可用性测试'] },
         'Carry App': { desc: '一款金融应用的引导流程，由用户研究和细致的交互设计塑造而成。', meta: '移动应用·金融', tags: ['交互设计'] },
         'Puffy': { desc: '为电商网站打造的响应式界面设计与组件库。', meta: '网站·电商', tags: ['响应式设计', '组件库'] },
-        'Break Smart': { desc: '一项健康类案例研究 — 线框图、高保真设计与可交互原型。', meta: '网站', tags: ['线框图', '原型设计'] },
+        'Break Smart': { desc: '一项健康类案例研究, 线框图、高保真设计与可交互原型。', meta: '网站', tags: ['线框图', '原型设计'] },
         'Real Estate': { desc: '一个以转化率为核心的落地页，每个决策都基于A/B测试依据。', meta: '网站·落地页', tags: ['转化率设计'] },
       },
     },
@@ -492,7 +492,7 @@ export const translations = {
       title: '我的工作方式',
       subtitle: '无论是移动端还是企业项目，每个项目都遵循相同的四个步骤。',
       steps: [
-        { num: '01', title: '理解', body: '通过研究与访谈了解真实的痛点、习惯与目标 — 而非凭空假设。' },
+        { num: '01', title: '理解', body: '通过研究与访谈了解真实的痛点、习惯与目标, 而非凭空假设。' },
         { num: '02', title: '梳理流程', body: '信息架构与线框图，让正确的路径成为显而易见的路径。' },
         { num: '03', title: '打磨细节', body: '在Figma中打造高保真界面与设计系统，确保在不同屏幕和状态下都能稳定呈现。' },
         { num: '04', title: '测试与交付', body: '进行可用性测试，随后与工程团队紧密协作，确保设计意图在实现过程中不被丢失。' },
@@ -504,7 +504,7 @@ export const translations = {
       title: '经历',
       subtitle: '五年间穿梭于用户体验实践与前端开发工作之间。',
       careerNoteLabel: '目前处于职业空档期',
-      careerNote: '自2025年3月起 — 用于学习和练习设计。可立即加入新团队。',
+      careerNote: '自2025年3月起, 用于学习和练习设计。可立即加入新团队。',
       items: {
         'Cipher Impact': { role: 'UI/UX设计师', bullets: ['主导一款ERP产品的重新设计，简化多个模块中的复杂工作流程', '构建并维护设计系统，以保持产品一致性并加快交付速度', '为桌面端和平板设计支持浅色与深色主题的响应式布局'] },
         'HRSG': { role: 'UI/UX专员', bullets: ['进行用户研究与访谈，以确定产品方向并验证决策', '在Figma中设计网页与移动端界面，涵盖从引导到核心任务的全流程', '制作线框图与可交互原型，用于利益相关者评审和可用性测试'] },
@@ -515,7 +515,7 @@ export const translations = {
     },
     about: {
       title: '关于我',
-      p1: '我关心理解用户 — 他们的痛点、习惯与目标 — 并将其转化为最自然、最理所当然的设计。我始终保持学习和质疑的态度，并将这种好奇心带入每一个项目。',
+      p1: '我关心理解用户, 他们的痛点、习惯与目标, 并将其转化为最自然、最理所当然的设计。我始终保持学习和质疑的态度，并将这种好奇心带入每一个项目。',
       p2: '希望加入一个真正重视用户体验、致力于打造有价值产品的团队。',
       eduLine: '软件工程学士', eduSchool: 'Sir Syed University of Engineering & Technology',
       langLine: '语言：乌尔都语（流利）、英语（中高级）',
@@ -528,7 +528,7 @@ export const translations = {
     },
     system: {
       title: '设计系统',
-      subtitle: '支撑本页面的令牌与组件 — 其构建与文档方式，与我交付给团队的设计系统完全一致。',
+      subtitle: '支撑本页面的令牌与组件, 其构建与文档方式，与我交付给团队的设计系统完全一致。',
       color: '颜色', type: '字体排印', buttons: '按钮', tags: '标签与徽章',
       typeSamples: { display: 'Aa Interfaces', heading: '精选作品', body: '我关心理解用户。', label: '移动应用·网站·ERP' },
       primaryAction: '主要操作', secondaryAction: '次要操作', onDark: '深色背景上',
@@ -541,7 +541,7 @@ export const translations = {
   },
 
   it: {
-    nav: { work: 'Lavori', process: 'Processo', experience: 'Esperienza', system: 'Sistema', about: 'Chi sono', contact: 'Contattami' },
+    nav: { work: 'Lavori', expertise: 'Competenze', process: 'Processo', experience: 'Esperienza', system: 'Sistema', about: 'Chi sono', faq: 'FAQ', contact: 'Contattami' },
     hero: {
       roleTag: 'Senior UI/UX Designer',
       headline: 'Interfacce che rendono ovvie le decisioni difficili.',
@@ -554,14 +554,14 @@ export const translations = {
     },
     work: {
       title: 'Lavori selezionati',
-      subtitle: 'Prodotti mobile, web ed enterprise — tra ricerca, flussi e interfacce ad alta fedeltà.',
+      subtitle: 'Prodotti mobile, web ed enterprise, tra ricerca, flussi e interfacce ad alta fedeltà.',
       items: {
-        'Nuré': { desc: "Un'app che riduce il carico mentale per coppie e famiglie. Design di prodotto end-to-end — ricerca, flussi e interfaccia ad alta fedeltà.", meta: 'App mobile', tags: ['Ricerca utenti', 'Design di prodotto'] },
+        'Nuré': { desc: "Un'app che riduce il carico mentale per coppie e famiglie. Design di prodotto end-to-end, ricerca, flussi e interfaccia ad alta fedeltà.", meta: 'App mobile', tags: ['Ricerca utenti', 'Design di prodotto'] },
         'Schedule Edge': { desc: "Redesign di un sistema ERP, semplificando flussi di lavoro complessi su più moduli per un'azienda manifatturiera.", meta: 'Sito web · Sistema ERP', tags: ['Design system', 'UX enterprise'] },
         'Octofy': { desc: 'Flussi di onboarding e design UI principale, basati su ricerca utenti e test di usabilità.', meta: 'App mobile', tags: ['Onboarding', 'Test di usabilità'] },
         'Carry App': { desc: "Il flusso di onboarding di un'app finanziaria, plasmato da ricerca utenti e design dell'interazione curato nei dettagli.", meta: 'App mobile · Finanza', tags: ["Design dell'interazione"] },
         'Puffy': { desc: 'Design UI responsive e libreria di componenti per un negozio e-commerce.', meta: 'Sito web · E-commerce', tags: ['Design responsive', 'Librerie di componenti'] },
-        'Break Smart': { desc: 'Un case study nel settore wellness — wireframe, design ad alta fedeltà e prototipo interattivo.', meta: 'Sito web', tags: ['Wireframing', 'Prototipazione'] },
+        'Break Smart': { desc: 'Un case study nel settore wellness, wireframe, design ad alta fedeltà e prototipo interattivo.', meta: 'Sito web', tags: ['Wireframing', 'Prototipazione'] },
         'Real Estate': { desc: 'Una landing page orientata alla conversione, progettata con una logica di A/B testing dietro ogni decisione.', meta: 'Sito web · Landing page', tags: ['Design della conversione'] },
       },
     },
@@ -569,7 +569,7 @@ export const translations = {
       title: 'Come lavoro',
       subtitle: 'Le stesse quattro fasi in ogni progetto, mobile o enterprise.',
       steps: [
-        { num: '01', title: 'Capire', body: 'Ricerca e interviste per individuare vere frustrazioni, abitudini e obiettivi — non supposizioni.' },
+        { num: '01', title: 'Capire', body: 'Ricerca e interviste per individuare vere frustrazioni, abitudini e obiettivi, non supposizioni.' },
         { num: '02', title: 'Definire il flusso', body: 'Architettura informativa e wireframe che rendono ovvio il percorso giusto.' },
         { num: '03', title: 'Curare il dettaglio', body: 'UI ad alta fedeltà e design system in Figma, costruiti per reggere su schermi e stati diversi.' },
         { num: '04', title: 'Testare e consegnare', body: "Test di usabilità, poi stretta collaborazione con l'ingegneria perché l'intento sopravviva all'implementazione." },
@@ -581,7 +581,7 @@ export const translations = {
       title: 'Esperienza',
       subtitle: 'Cinque anni tra pratica UX e lavoro pratico sul frontend.',
       careerNoteLabel: 'Attualmente in pausa dal lavoro',
-      careerNote: 'da marzo 2025 — dedicata ad apprendere e praticare il design. Disponibile per unirsi subito a un nuovo team.',
+      careerNote: 'da marzo 2025, dedicata ad apprendere e praticare il design. Disponibile per unirsi subito a un nuovo team.',
       items: {
         'Cipher Impact': { role: 'UI/UX Designer', bullets: ['Ha guidato il redesign di un prodotto ERP, semplificando flussi di lavoro complessi su più moduli', 'Ha costruito e mantenuto un design system per garantire coerenza e velocizzare la consegna', 'Ha progettato layout responsive con supporto a tema chiaro e scuro per desktop e tablet'] },
         'HRSG': { role: 'UI/UX Specialist', bullets: ['Ha condotto ricerche utenti e interviste per orientare il prodotto e validare le decisioni', "Ha progettato interfacce web e mobile in Figma, dall'onboarding ai task principali", 'Ha realizzato wireframe e prototipi interattivi per revisioni con gli stakeholder e test di usabilità'] },
@@ -592,7 +592,7 @@ export const translations = {
     },
     about: {
       title: 'Chi sono',
-      p1: 'Mi sta a cuore capire gli utenti — le loro frustrazioni, abitudini e obiettivi — e trasformarlo in un design che risulti ovvio nel modo migliore possibile. Continuo sempre a imparare, a farmi domande, e porto questa curiosità in ogni progetto.',
+      p1: 'Mi sta a cuore capire gli utenti, le loro frustrazioni, abitudini e obiettivi, e trasformarlo in un design che risulti ovvio nel modo migliore possibile. Continuo sempre a imparare, a farmi domande, e porto questa curiosità in ogni progetto.',
       p2: "Sto cercando un team che prenda sul serio l'esperienza utente e costruisca cose che valga la pena costruire.",
       eduLine: 'Laurea triennale, Ingegneria del software', eduSchool: 'Sir Syed University of Engineering & Technology',
       langLine: 'Lingue: urdu (fluente), inglese (intermedio-avanzato)',

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://komalata.co/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://komalata.co/images/projects/nure-portfolio-thumbnail.png</image:loc>
+      <image:title>Komal Ata | UI UX Designer portfolio</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://komalata.co/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://komalata.co/case-study/nure</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://komalata.co/images/projects/nure-portfolio-thumbnail.png</image:loc>
+      <image:title>Nuré UI UX case study</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://komalata.co/case-study/schedule-edge</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://komalata.co/images/projects/schedule-edge-portfolio-thumbnail.png</image:loc>
+      <image:title>Schedule Edge product design case study</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://komalata.co/case-study/octofy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://komalata.co/images/projects/octofy-portfolio-thumbnail.png</image:loc>
+      <image:title>Octofy mobile app design case study</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://komalata.co/case-study/caary</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://komalata.co/images/projects/caary-portfolio-thumbnail.png</image:loc>
+      <image:title>Caary fintech UI UX case study</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://komalata.co/case-study/puffy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://komalata.co/images/projects/puffy-portfolio-thumbnail.png</image:loc>
+      <image:title>Puffy e-commerce UI design case study</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://komalata.co/case-study/break-smart</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://komalata.co/images/projects/break-smart-thumbnail-v2.png</image:loc>
+      <image:title>Break Smart mobile UX case study</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://komalata.co/case-study/real-estate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://komalata.co/images/projects/real-estate-portfolio-thumbnail.png</image:loc>
+      <image:title>Real estate website UI UX case study</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://komalata.co/case-study/etizan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://komalata.co/images/projects/etizan-thumbnail-v3.png</image:loc>
+      <image:title>Etizan Arabic RTL UI design case study</image:title>
+    </image:image>
+  </url>
+</urlset>

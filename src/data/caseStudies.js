@@ -12,7 +12,7 @@ export const caseStudies = {
     problem:
       'Household and emotional work stays invisible until someone is already overloaded. A normal to-do list records tasks. It does not show who is carrying the day, and it turns a request for help into a nag. The product had to make imbalance obvious and the ask feel light.',
     audience: [
-      { title: 'The person carrying more', body: 'Noman opens the app in the evening and needs to see, immediately, that the day is uneven — without reading a long list.' },
+      { title: 'The person carrying more', body: 'Noman opens the app in the evening and needs to see, immediately, that the day is uneven, without reading a long list.' },
       { title: 'The partner who can take something', body: 'Kainat needs a specific, named ask, not a vague complaint. The design hands her one task, not the whole argument.' },
     ],
     decisions: [
@@ -30,7 +30,7 @@ export const caseStudies = {
       },
       {
         title: 'Capture a messy thought, then structure it',
-        body: 'New Task starts with “What’s on your mind?” and “Write everything on your mind, let AI organise it.” A brain dump becomes Clean the house, Buy groceries, Prepare food, Set up guest room — with owner, due date, and priority.',
+        body: 'New Task starts with “What’s on your mind?” and “Write everything on your mind, let AI organise it.” A brain dump becomes Clean the house, Buy groceries, Prepare food, Set up guest room, with owner, due date, and priority.',
       },
     ],
     screens: [
@@ -67,7 +67,7 @@ export const caseStudies = {
     problem:
       'A manufacturing ERP usually mirrors the database. Quoting, products, inventory, clients, and installation live in different modules, so a person has to already know the system before they can see the business. The redesign had to make “where are we?” answerable from the first screen.',
     audience: [
-      { title: 'Floor manager', body: 'Needs counts first — how many projects, clients, products, and doors — then a chart, not a settings page.' },
+      { title: 'Floor manager', body: 'Needs counts first (how many projects, clients, products, and doors), then a chart, not a settings page.' },
       { title: 'Someone checking from a phone', body: 'Needs the same story in a narrower layout: summary tiles, one chart, and status, without a new information model.' },
     ],
     decisions: [
@@ -118,7 +118,7 @@ export const caseStudies = {
     overview:
       'Octofy is the HRSG self-service app. Employees mark attendance, request time off, open a payslip, and file an expense. Managers see who is in. The Figma file designs both roles in one product, with a home of quick actions and a self-service menu for the longer tasks.',
     problem:
-      'HR tools hide a simple daily job — am I checked in, and can I take Thursday off — behind payroll language and desktop portals. People abandon the task or message HR instead. The app had to make the daily action obvious and keep the heavier tasks one tap further down.',
+      'HR tools hide a simple daily job (am I checked in, and can I take Thursday off?) behind payroll language and desktop portals. People abandon the task or message HR instead. The app had to make the daily action obvious and keep the heavier tasks one tap further down.',
     audience: [
       { title: 'Employee', body: 'Arrives to check in, request leave, or grab a payslip. The home screen is a set of actions, not a dashboard of HR news.' },
       { title: 'Manager', body: 'Needs team attendance for the week: who is on a general shift, who is off, and what to approve. Same app, different home emphasis.' },
@@ -130,7 +130,7 @@ export const caseStudies = {
       },
       {
         title: 'Make check-in a confirmation, not a form',
-        body: 'Mark Attendance shows the date, the time, and the place — HRSG office or location unknown — then Check in and Check out. Location is visible before the person commits.',
+        body: 'Mark Attendance shows the date, the time, and the place (HRSG office or location unknown), then Check in and Check out. Location is visible before the person commits.',
       },
       {
         title: 'Design the manager view as a roster',
@@ -169,7 +169,7 @@ export const caseStudies = {
     tools: 'Figma',
     file: 'Carry App',
     overview:
-      'Caary is an employee-spend product. The Figma file covers the card itself — virtual and physical — and the control around it: a yearly allowance, lock and cancel, recent transactions, and which receipts are still missing. Onboarding brings someone into that system. The core UI is what they live in afterward.',
+      'Caary is an employee-spend product. The Figma file covers the card itself (virtual and physical) and the control around it: a yearly allowance, lock and cancel, recent transactions, and which receipts are still missing. Onboarding brings someone into that system. The core UI is what they live in afterward.',
     problem:
       'Company spend is usually a spreadsheet plus a photo of a receipt in a chat thread. Employees do not know what is left on the card. Managers cannot see, in one place, what was spent and what still has no receipt. The product had to make the card, the limit, and the proof feel like one object.',
     audience: [
@@ -226,7 +226,7 @@ export const caseStudies = {
     problem:
       'A luxury mattress page can look expensive and still be hard to buy. Shoppers face sizes, a sale price, a trial, layers of foam, and a pile of awards. The pain in the file is overwhelm. The design job is to keep the luxury and make the next decision obvious: which size, what it costs with the code, and whether the trial covers the risk.',
     audience: [
-      { title: 'A shopper comparing mattresses', body: 'Needs size, price with the offer, delivery window, and a reason to trust the material — without reading the whole page first.' },
+      { title: 'A shopper comparing mattresses', body: 'Needs size, price with the offer, delivery window, and a reason to trust the material, without reading the whole page first.' },
       { title: 'Someone who is not ready to choose', body: 'Needs a quiz, a specialist, or a short FAQ, instead of being pushed straight into Add to cart.' },
     ],
     decisions: [
@@ -251,7 +251,7 @@ export const caseStudies = {
       { name: 'Homepage, desktop', note: 'Sale bar, award hero, quiz, featured mattress, trial, and reasons to buy.' },
       { name: 'Homepage, mobile', note: 'The same story stacked: hero, products, gifts, bedding, and frames.' },
       { name: 'Puffy Lux product page', note: 'Gallery, rating, stock, size, price with code, delivery date, and add to cart.' },
-      { name: 'Help on the page', note: 'FAQs, call a specialist, chat, text, and email — for the questions that block a purchase.' },
+      { name: 'Help on the page', note: 'FAQs, call a specialist, chat, text, and email, for the questions that block a purchase.' },
       { name: 'Type styles', note: 'Display 1 through 6, with sizes for laptop, tablet, and phone.' },
     ],
     process: [
@@ -286,7 +286,7 @@ export const caseStudies = {
     decisions: [
       {
         title: 'Make today the home screen',
-        body: 'Home shows the person’s name, Schedule break, and today’s four times — morning, midday, afternoon, evening. The monthly calendar and settings are one step away, not in the way.',
+        body: 'Home shows the person’s name, Schedule break, and today’s four times, morning, midday, afternoon, evening. The monthly calendar and settings are one step away, not in the way.',
       },
       {
         title: 'Offer slots that are still open',
@@ -298,7 +298,7 @@ export const caseStudies = {
       },
       {
         title: 'Use the calendar to prevent clashes',
-        body: 'The month view is color-coded for availability. Tapping a date opens scheduling. The constraint — no overlapping colleague — is checked as the slot is chosen, not after.',
+        body: 'The month view is color-coded for availability. Tapping a date opens scheduling. The constraint (no overlapping colleague) is checked as the slot is chosen, not after.',
       },
     ],
     screens: [
@@ -330,12 +330,12 @@ export const caseStudies = {
     tools: 'Figma',
     file: 'SQ Horizon',
     overview:
-      'This is a concept website for a construction company, explored as two directions. Concept 1 is an editorial page: a headline about crafting spaces, a search across services, and a request for a quote beside a photograph of the work. Concept 2 leads with search and proof — people served, awards, and the building itself. In the Figma file the working name is SQ Horizon, with Variation 1 and Variation 2, plus the pages a visitor needs after the hero: projects, services, a free consultation, the team, and testimonials.',
+      'This is a concept website for a construction company, explored as two directions. Concept 1 is an editorial page: a headline about crafting spaces, a search across services, and a request for a quote beside a photograph of the work. Concept 2 leads with search and proof (people served, awards, and the building itself). In the Figma file the working name is SQ Horizon, with Variation 1 and Variation 2, plus the pages a visitor needs after the hero: projects, services, a free consultation, the team, and testimonials.',
     problem:
       'A construction site has to do two jobs at once. It has to feel like the company can be trusted with a home, and it has to help someone act: search a service, ask for a quote, or book a consultation. A single layout forces one of those jobs to win. Two concepts keep the question open and make the difference testable.',
     audience: [
       { title: 'Someone ready to talk', body: 'Wants a quote or a consultation, and needs the company’s work and a clear way to ask.' },
-      { title: 'Someone still comparing', body: 'Wants to search services, see projects, and find proof — clients, awards, years — before they give a name.' },
+      { title: 'Someone still comparing', body: 'Wants to search services, see projects, and find proof (clients, awards, years) before they give a name.' },
     ],
     decisions: [
       {
@@ -352,7 +352,7 @@ export const caseStudies = {
       },
       {
         title: 'Design the pair so a test is fair',
-        body: 'Headline, primary action, and where the proof sits are the things that change. Navigation — home, projects, services, contact — stays recognizable, so a later comparison is about the concept and not about a missing page.',
+        body: 'Headline, primary action, and where the proof sits are the things that change. Navigation (home, projects, services, contact) stays recognizable, so a later comparison is about the concept and not about a missing page.',
       },
     ],
     screens: [
@@ -370,7 +370,7 @@ export const caseStudies = {
     ],
     outcomes: [
       'Two complete homepage directions for the same construction company.',
-      'A shared set of inner pages — services, projects, consultation, team — so the concepts are not just heroes.',
+      'A shared set of inner pages (services, projects, consultation, team) so the concepts are not just heroes.',
       'A layout pair that can be compared without changing the business underneath.',
     ],
   },
@@ -389,7 +389,7 @@ export const caseStudies = {
       'Translating the strings and flipping a few icons leaves an English layout wearing Arabic text. Side navigation ends up on the wrong edge, charts still grow from the left, and a tender ID sits where the eye does not start. Operators who work in Arabic have to relearn a layout that was never designed for them.',
     audience: [
       { title: 'An Arabic-speaking operator', body: 'Lands on the command center and expects the sidebar, the title, and the first number to begin on the right.' },
-      { title: 'Someone comparing both languages', body: 'Needs the same command center — tender insights, weekly tenders, status, and what needs attention — so the language change does not change the job.' },
+      { title: 'Someone comparing both languages', body: 'Needs the same command center, tender insights, weekly tenders, status, and what needs attention, so the language change does not change the job.' },
     ],
     decisions: [
       {

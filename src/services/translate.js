@@ -2,7 +2,7 @@
  * Live machine translation, used ONLY for languages that don't have a
  * hand-written entry in i18n/translations.js.
  *
- * Uses MyMemory's public endpoint — free and keyless, so nothing secret
+ * Uses MyMemory's public endpoint, free and keyless, so nothing secret
  * ends up in this frontend bundle. Trade-offs worth knowing:
  *   - Rate limited (roughly 5k words/day per IP, anonymous)
  *   - Machine quality: fine for gist, not for a headline you're proud of
@@ -12,7 +12,7 @@
  * you already viewed is instant and costs no extra requests.
  *
  * To swap in a paid provider (DeepL, Google), replace translateBatch()
- * below — everything else stays the same. Route it through a small
+ * below, everything else stays the same. Route it through a small
  * backend so the API key never reaches the browser.
  */
 
@@ -35,7 +35,7 @@ function writeCache(text, target, value) {
   try {
     sessionStorage.setItem(cacheKey(text, target), value)
   } catch {
-    /* storage full or blocked — not fatal, just skip caching */
+    /* storage full or blocked, not fatal, just skip caching */
   }
 }
 

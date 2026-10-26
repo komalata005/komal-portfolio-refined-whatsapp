@@ -9,9 +9,11 @@ export default function Nav() {
 
   const links = [
     { href: '/#work', label: t.nav.work },
+    { href: '/#expertise', label: t.nav.expertise || 'Expertise' },
     { href: '/#about', label: t.nav.about },
     { href: '/#process', label: t.nav.process },
     { href: '/#experience', label: t.nav.experience },
+    { href: '/faq', label: t.nav.faq || 'FAQ' },
   ]
 
   return (
@@ -24,12 +26,12 @@ export default function Nav() {
           Komal Ata
         </a>
 
-        <ul className="hidden gap-8 md:flex">
+        <ul className="hidden items-center gap-5 lg:gap-7 md:flex">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="relative text-[0.88rem] font-medium tracking-[0.01em] text-inkSoft transition-colors after:absolute after:-bottom-1 after:start-0 after:h-[1.5px] after:w-0 after:bg-violet after:transition-all after:duration-300 hover:text-violet hover:after:w-full dark:text-[#C8BFE3] dark:hover:text-lilac dark:after:bg-lilac"
+                className="relative text-[0.82rem] font-medium tracking-[0.01em] text-inkSoft transition-colors after:absolute after:-bottom-1 after:start-0 after:h-[1.5px] after:w-0 after:bg-violet after:transition-all after:duration-300 hover:text-violet hover:after:w-full dark:text-[#C8BFE3] dark:hover:text-lilac dark:after:bg-lilac"
               >
                 {l.label}
               </a>

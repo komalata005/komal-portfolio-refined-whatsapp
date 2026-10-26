@@ -1,6 +1,6 @@
 /**
  * The 8 curated languages. These have hand-written translations in
- * translations.js — instant, no network call, no rate limits.
+ * translations.js, instant, no network call, no rate limits.
  */
 export const LANGUAGES = [
   { code: 'en', label: 'English', native: 'English', dir: 'ltr' },
@@ -16,7 +16,7 @@ export const LANGUAGES = [
 /**
  * Extra languages with NO hand-written translation. Picking one of these
  * triggers a live machine-translation fetch (see services/translate.js).
- * Add or remove freely — nothing else needs to change.
+ * Add or remove freely, nothing else needs to change.
  */
 export const API_LANGUAGES = [
   { code: 'fr', label: 'French', native: 'Français', dir: 'ltr' },

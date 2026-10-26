@@ -74,9 +74,8 @@ export default function Work() {
     <section id="work" className="py-22 transition-colors md:py-24">
       <SectionDivider label="Portfolio" />
       <div className="mx-auto mt-10 max-w-content px-8">
-        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+        <div className="mb-8">
           <h2 className="font-serif text-[1.7rem] dark:text-[#F6F2FC] md:text-[2.3rem]">{t.work.title}</h2>
-          <p className="text-[0.85rem] text-inkSoft dark:text-[#9C90BC]">Scrolls continuously · hover to pause</p>
         </div>
 
         <div

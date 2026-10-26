@@ -1,6 +1,11 @@
 export const caseStudyExtras = {
   nure: {
     heading: 'Fairness you can see before the argument starts.',
+    goals: [
+      'Make uneven load visible on the home screen, before anyone opens a list.',
+      'Turn “help me” into one named task, not a vague complaint.',
+      'Keep AI as a concrete suggestion, not a lecture about fairness.',
+    ],
     people: [
       { name: 'Noman', role: 'Carrying the day', image: '/images/people/nure-noman.jpg', points: ['The list never shows that three of the four jobs are already his.', 'Fairness only appears once he is already overloaded.', 'Asking for help turns into a nag.'] },
       { name: 'Kainat', role: 'The partner', image: '/images/people/nure-kainat.jpg', points: ['A vague “can you help” sounds like a complaint.', 'She cannot see the one task that would balance the day.', 'She waits, because the ask is not named.'] },
@@ -31,6 +36,11 @@ export const caseStudyExtras = {
   },
   'schedule-edge': {
     heading: 'The whole door business, before anyone opens a module.',
+    goals: [
+      'Answer “where are we?” from the first screen, not from module hunting.',
+      'Keep desktop and phone on the same information model.',
+      'Make light and dark feel like one product, not two skins.',
+    ],
     people: [
       { name: 'Amir', role: 'Floor manager', image: '/images/people/schedule-amir.jpg', points: ['Quotes, inventory, and installs live in different modules.', 'He has to know the system before he can see the business.', '“Where are we?” is not answered on the first screen.'] },
       { name: 'Hina', role: 'Checking from site', image: '/images/people/schedule-hina.jpg', points: ['The phone does not tell the same story as the desktop.', 'Status on site means hunting through modules.', 'A second layout should not mean a second product.'] },
@@ -60,6 +70,11 @@ export const caseStudyExtras = {
   },
   octofy: {
     heading: 'Check in. Ask for Thursday. Leave the portal behind.',
+    goals: [
+      'Put daily actions (check-in, leave, payslip) on home, not behind payroll language.',
+      'Give managers a roster view, not a queue of request IDs.',
+      'Keep employee and manager in one app with clear role emphasis.',
+    ],
     people: [
       { name: 'Ayesha', role: 'Employee', image: '/images/people/octofy-ayesha.jpg', points: ['A simple check-in is buried in a desktop HR portal.', 'Leave and a payslip sit behind payroll language.', 'She messages HR instead of finishing the task.'] },
       { name: 'Omar', role: 'Manager', image: '/images/people/octofy-omar.jpg', points: ['He cannot see who is in without asking HR.', 'Approvals start from request IDs, not from the roster.', 'Employee and manager feel like two different apps.'] },
@@ -90,6 +105,11 @@ export const caseStudyExtras = {
   },
   caary: {
     heading: 'The card, the limit, and the missing receipt.',
+    goals: [
+      'Treat the card, the limit, and the receipt as one object.',
+      'Let employees lock or cancel without calling finance.',
+      'Show managers spend and missing proof on one screen.',
+    ],
     people: [
       { name: 'Lina', role: 'Cardholder', image: '/images/people/caary-lina.jpg', points: ['She does not know what is left until finance writes.', 'The card, the limit, and the receipt live apart.', 'Locking the card means a call, not a control on the card.'] },
       { name: 'Farhan', role: 'Manager', image: '/images/people/caary-farhan.jpg', points: ['Receipts arrive as photos in a chat thread.', 'Spend and missing proof are not on one screen.', 'He cannot see which cards are carrying the spend.'] },
@@ -119,6 +139,11 @@ export const caseStudyExtras = {
   },
   puffy: {
     heading: 'Luxury, without the mattress maze.',
+    goals: [
+      'Lead with the next decision (shop, quiz, or specialist), not a wall of awards.',
+      'Keep size, price with offer, and delivery together on the product page.',
+      'Make help (FAQ, chat, call) available where purchase questions block.',
+    ],
     people: [
       { name: 'Maya', role: 'Still comparing', image: '/images/people/puffy-maya.jpg', points: ['Sizes, trials, and awards all shout at the same time.', 'The page looks expensive and still hides the next decision.', 'She needs a quiz or a specialist before she can buy.'] },
       { name: 'Jules', role: 'Ready to buy', image: '/images/people/puffy-jules.jpg', points: ['He knows the mattress and still cannot find the price with the code.', 'Size, stock, and delivery are scattered down the page.', 'The trial that makes the price feel safe is easy to miss.'] },
@@ -149,6 +174,11 @@ export const caseStudyExtras = {
   },
   'break-smart': {
     heading: 'Four breaks. None of them stolen.',
+    goals: [
+      'Plan today’s four breaks before work absorbs the afternoon.',
+      'Prevent overlapping slots with a colleague on the same floor.',
+      'Confirm before a break locks, so mistakes are easy to correct.',
+    ],
     people: [
       { name: 'David Walker', role: 'Software engineer', image: '/images/people/break-david.jpg', points: ['He gets absorbed and skips the break until the afternoon is gone.', 'Today becomes another decision in the middle of a task.', 'The four short breaks were never planned.'] },
       { name: 'Cameron', role: 'On the same floor', image: '/images/people/break-cameron.jpg', points: ['Two people take the same ten minutes.', 'The break space clashes because the slot was not reserved.', 'She finds out only after she has already stopped work.'] },
@@ -179,12 +209,17 @@ export const caseStudyExtras = {
   },
   'real-estate': {
     heading: 'Trust first, or proof first. Two sites, one builder.',
+    goals: [
+      'Test two conversion hypotheses without inventing a second company.',
+      'Keep navigation and offer identical so the concepts stay comparable.',
+      'Place quote or search where each concept needs the next step.',
+    ],
     people: [
       { name: 'Sana', role: 'Ready to talk', image: '/images/people/estate-sana.jpg', points: ['She wants a quote, and the site only offers a logo.', 'The work is not sitting next to the ask.', 'There is no clear way to start the conversation.'] },
       { name: 'Adeel', role: 'Still comparing', image: '/images/people/estate-adeel.jpg', points: ['He needs proof before he leaves a name.', 'Services are not searchable from the first screen.', 'People served and awards are missing while he is still comparing.'] },
     ],
     target:
-      'Someone who might hire a construction company. One visitor is ready to request a quote. Another is still comparing and wants to search services and see proof — people served, awards, projects — before they leave a name.',
+      'Someone who might hire a construction company. One visitor is ready to request a quote. Another is still comparing and wants to search services and see proof (people served, awards, projects) before they leave a name.',
     colors: [
       { name: 'Navy', hex: '#10182E', use: 'Concept field and type' },
       { name: 'Orange', hex: '#F97316', use: 'Concept 1 brand and quote action' },
@@ -208,6 +243,11 @@ export const caseStudyExtras = {
   },
   etizan: {
     heading: 'Arabic that was designed, not flipped.',
+    goals: [
+      'Compose Arabic from the right: sidebar, title, and first number.',
+      'Mirror charts and queues so geometry matches reading direction.',
+      'Keep English and Arabic as twins, with Latin for IDs and amounts.',
+    ],
     people: [
       { name: 'Noor', role: 'Arabic operator', image: '/images/people/etizan-noor.jpg', points: ['The sidebar and the first number still start on the left.', 'Charts still grow from the left under Arabic text.', 'She has to relearn a layout that was never designed for her.'] },
       { name: 'James', role: 'English teammate', image: '/images/people/etizan-james.jpg', points: ['He needs the same command center, not a different product.', 'A language switch should not change the job.', 'IDs and amounts still have to stay readable beside the Arabic UI.'] },

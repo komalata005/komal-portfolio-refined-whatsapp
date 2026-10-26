@@ -1,4 +1,4 @@
-# Komal Ata — Portfolio (React + Tailwind)
+# Komal Ata | Portfolio (React + Tailwind)
 
 A Vite + React + Tailwind CSS build of the portfolio site, matching the HTML prototype:
 lavender-to-violet palette, Fraunces + IBM Plex Sans type, a calligraphic wordmark, a
@@ -8,7 +8,7 @@ showcase, and a contact footer.
 ## Opening in VS Code
 
 1. Unzip and open the `komal-portfolio` folder in VS Code (`code komal-portfolio` or File → Open Folder).
-2. VS Code will prompt you to install the recommended extensions (Tailwind CSS IntelliSense, ESLint, Prettier, React snippets) — accept that prompt for autocomplete on Tailwind classes and consistent formatting.
+2. VS Code will prompt you to install the recommended extensions (Tailwind CSS IntelliSense, ESLint, Prettier, React snippets), accept that prompt for autocomplete on Tailwind classes and consistent formatting.
 3. Open a terminal inside VS Code (`` Ctrl+` ``) and run the setup below.
 
 ## Setup
@@ -27,7 +27,7 @@ npm run build
 npm run preview
 ```
 
-`npm run build` outputs a static site to `dist/` — upload that folder anywhere
+`npm run build` outputs a static site to `dist/`, upload that folder anywhere
 (Netlify, Vercel, GitHub Pages, etc.).
 
 ## Project structure
@@ -44,7 +44,7 @@ tailwind.config.js  Color and font tokens matching the design (paper, violet, li
 ## Content notes
 
 - **Experience dates**: the source CV's layout made a few company/date pairings
-  (Groupshop, Botsify, PIA) genuinely ambiguous to extract — double-check
+  (Groupshop, Botsify, PIA) genuinely ambiguous to extract, double-check
   `src/data/experience.js` against the real dates before publishing.
 - **Project visuals** (`src/components/ProjectVisual.jsx`) are abstract placeholder
   mockups, not real screenshots. Swap them for actual project images before this

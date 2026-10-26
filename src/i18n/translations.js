@@ -1,12 +1,12 @@
 export const translations = {
   en: {
-    nav: { work: 'Work', process: 'Process', experience: 'Experience', system: 'System', about: 'About', contact: 'Get in touch' },
+    nav: { work: 'Work', expertise: 'Expertise', process: 'Process', experience: 'Experience', system: 'System', about: 'About', faq: 'FAQ', contact: 'Get in touch' },
     hero: {
-      roleTag: 'Senior UI/UX Designer',
+      roleTag: 'UI/UX · Product · Mobile Designer',
       headline: 'Creating designs people love to use.',
       ctaTalk: "Let's talk",
       lede:
-        "Complex work, made clear. I'm Komal, a senior UI/UX designer in Karachi. Five years turning research into interfaces people enjoy, working close to engineering so the design actually ships.",
+        "Complex work, made clear. I'm Komal, a UI/UX designer and product designer in Karachi. Five years of app design and web product design, turning research into mobile and SaaS interfaces people enjoy, working close to engineering so the design actually ships.",
       ctaWork: 'See selected work',
       ctaPortfolio: 'Full portfolio ↗',
       statusBadge: 'Open to new roles',
@@ -90,7 +90,7 @@ export const translations = {
     },
     about: {
       title: 'About',
-      p1: 'I care about understanding what people need and turning that into design that feels clear and natural. I keep learning, keep asking questions, and bring that curiosity into every project.',
+      p1: 'I care about understanding what people need and turning that into UI/UX and product design that feels clear and natural, across mobile apps, web products, and design systems. I keep learning, keep asking questions, and bring that curiosity into every project.',
       p2: 'Looking to join a team that takes user experience seriously and builds things worth building.',
       eduLine: 'BSc, Software Engineering',
       eduSchool: 'Sir Syed University of Engineering & Technology',
@@ -129,7 +129,7 @@ export const translations = {
   },
 
   ur: {
-    nav: { work: 'کام', process: 'طریقہ کار', experience: 'تجربہ', system: 'سسٹم', about: 'تعارف', contact: 'رابطہ کریں' },
+    nav: { work: 'کام', expertise: 'مہارت', process: 'طریقہ کار', experience: 'تجربہ', system: 'سسٹم', about: 'تعارف', faq: 'سوالات', contact: 'رابطہ کریں' },
     hero: {
       roleTag: 'سینئر یو آئی/یو ایکس ڈیزائنر',
       headline: 'ایسے ڈیزائن بناتی ہوں جنہیں لوگ استعمال کرنا پسند کریں۔',
@@ -149,24 +149,24 @@ export const translations = {
     },
     work: {
       title: 'منتخب کام',
-      subtitle: 'موبائل، ویب اور انٹرپرائز پروڈکٹس — ریسرچ، فلوز اور های فیڈیلٹی یو آئی پر مشتمل۔',
+      subtitle: 'موبائل، ویب اور انٹرپرائز پروڈکٹس, ریسرچ، فلوز اور های فیڈیلٹی یو آئی پر مشتمل۔',
       caseCta: 'کیس اسٹڈی دیکھیں',
       figmaCta: 'Figma فائل',
       items: {
-        'Nuré': { desc: 'جوڑوں اور گھرانوں کے لیے ذہنی بوجھ کم کرنے والی ایپ۔ مکمل پروڈکٹ ڈیزائن — ریسرچ، فلوز اور های فیڈیلٹی یو آئی۔', meta: 'موبائل ایپ', tags: ['یوزر ریسرچ', 'پروڈکٹ ڈیزائن'] },
+        'Nuré': { desc: 'جوڑوں اور گھرانوں کے لیے ذہنی بوجھ کم کرنے والی ایپ۔ مکمل پروڈکٹ ڈیزائن, ریسرچ، فلوز اور های فیڈیلٹی یو آئی۔', meta: 'موبائل ایپ', tags: ['یوزر ریسرچ', 'پروڈکٹ ڈیزائن'] },
         'Schedule Edge': { desc: 'ایک مینوفیکچرنگ کاروبار کے لیے ای آر پی سسٹم کی نئے سرے سے ڈیزائننگ، متعدد ماڈیولز میں پیچیدہ ورک فلوز کو آسان بنانا۔', meta: 'ویب سائٹ · ای آر پی سسٹم', tags: ['ڈیزائن سسٹمز', 'انٹرپرائز یو ایکس'] },
         'Octofy': { desc: 'یوزر ریسرچ اور یوزیبلٹی ٹیسٹنگ کی بنیاد پر آن بورڈنگ فلوز اور بنیادی یو آئی ڈیزائن۔', meta: 'موبائل ایپ', tags: ['آن بورڈنگ', 'یوزیبلٹی ٹیسٹنگ'] },
         'Carry App': { desc: 'ایک فنانس ایپ کا آن بورڈنگ فلو، جو یوزر ریسرچ اور باریک بینی سے کیے گئے انٹرایکشن ڈیزائن سے تشکیل پایا۔', meta: 'موبائل ایپ · فنانس', tags: ['انٹرایکشن ڈیزائن'] },
         'Puffy': { desc: 'ایک ای کامرس اسٹور کے لیے ریسپانسو یو آئی ڈیزائن اور کمپوننٹ لائبریری۔', meta: 'ویب سائٹ · ای کامرس', tags: ['ریسپانسو ڈیزائن', 'کمپوننٹ لائبریریز'] },
-        'Break Smart': { desc: 'ایک ویلنیس کیس اسٹڈی — وائرفریمز، های فیڈیلٹی ڈیزائن اور ایک انٹرایکٹو پروٹوٹائپ۔', meta: 'ویب سائٹ', tags: ['وائرفریمنگ', 'پروٹوٹائپنگ'] },
+        'Break Smart': { desc: 'ایک ویلنیس کیس اسٹڈی, وائرفریمز، های فیڈیلٹی ڈیزائن اور ایک انٹرایکٹو پروٹوٹائپ۔', meta: 'ویب سائٹ', tags: ['وائرفریمنگ', 'پروٹوٹائپنگ'] },
         'Real Estate': { desc: 'ایک کنورژن پر مرکوز لینڈنگ پیج، جس کا ہر فیصلہ اے/بی ٹیسٹنگ کی بنیاد پر کیا گیا۔', meta: 'ویب سائٹ · لینڈنگ پیج', tags: ['کنورژن ڈیزائن'] },
       },
     },
     process: {
       title: 'میں کیسے کام کرتی ہوں',
-      subtitle: 'ہر پروجیکٹ میں یہی چار قدم — چاہے موبائل ہو یا انٹرپرائز۔',
+      subtitle: 'ہر پروجیکٹ میں یہی چار قدم, چاہے موبائل ہو یا انٹرپرائز۔',
       steps: [
-        { num: '01', title: 'سمجھنا', body: 'حقیقی مشکلات، عادات اور مقاصد جاننے کے لیے ریسرچ اور انٹرویوز — قیاس آرائی نہیں۔' },
+        { num: '01', title: 'سمجھنا', body: 'حقیقی مشکلات، عادات اور مقاصد جاننے کے لیے ریسرچ اور انٹرویوز, قیاس آرائی نہیں۔' },
         { num: '02', title: 'فلو کی تشکیل', body: 'انفارمیشن آرکیٹیکچر اور وائرفریمز جو صحیح راستے کو ہی واضح راستہ بنا دیں۔' },
         { num: '03', title: 'تفصیل کا ڈیزائن', body: 'Figma میں های فیڈیلٹی یو آئی اور ڈیزائن سسٹمز، جو ہر اسکرین اور حالت میں قائم رہیں۔' },
         { num: '04', title: 'جانچ اور حوالگی', body: 'یوزیبلٹی ٹیسٹنگ، پھر انجینئرنگ کے ساتھ قریبی تعاون تاکہ نیت عملدرآمد میں برقرار رہے۔' },
@@ -178,7 +178,7 @@ export const translations = {
       title: 'تجربہ',
       subtitle: 'پانچ سال یو ایکس پریکٹس اور عملی فرنٹ اینڈ کام کے درمیان۔',
       careerNoteLabel: 'فی الحال کیریئر بریک پر',
-      careerNote: 'مارچ 2025 سے — سیکھنے اور ڈیزائن کی مشق میں مصروف۔ فوری طور پر نئی ٹیم جوائن کرنے کے لیے تیار۔',
+      careerNote: 'مارچ 2025 سے, سیکھنے اور ڈیزائن کی مشق میں مصروف۔ فوری طور پر نئی ٹیم جوائن کرنے کے لیے تیار۔',
       items: {
         'Cipher Impact': {
           role: 'یو آئی/یو ایکس ڈیزائنر',
@@ -219,7 +219,7 @@ export const translations = {
     },
     about: {
       title: 'تعارف',
-      p1: 'مجھے یوزرز کو سمجھنے کی فکر رہتی ہے — ان کی مشکلات، عادات اور مقاصد — اور اسے ایسے ڈیزائن میں بدلنا جو بہترین انداز میں واضح محسوس ہو۔ میں ہمیشہ سیکھتی رہتی ہوں، سوال کرتی رہتی ہوں، اور یہی تجسس ہر پروجیکٹ میں لاتی ہوں۔',
+      p1: 'مجھے یوزرز کو سمجھنے کی فکر رہتی ہے, ان کی مشکلات، عادات اور مقاصد, اور اسے ایسے ڈیزائن میں بدلنا جو بہترین انداز میں واضح محسوس ہو۔ میں ہمیشہ سیکھتی رہتی ہوں، سوال کرتی رہتی ہوں، اور یہی تجسس ہر پروجیکٹ میں لاتی ہوں۔',
       p2: 'ایسی ٹیم تلاش کر رہی ہوں جو یوزر ایکسپیرینس کو سنجیدگی سے لے اور واقعی قابلِ قدر چیزیں بنائے۔',
       eduLine: 'بی ایس سی، سافٹ ویئر انجینئرنگ',
       eduSchool: 'سر سید یونیورسٹی آف انجینئرنگ اینڈ ٹیکنالوجی',
@@ -233,7 +233,7 @@ export const translations = {
     },
     system: {
       title: 'ڈیزائن سسٹم',
-      subtitle: 'اس صفحے کے پیچھے موجود ٹوکنز اور کمپوننٹس — بالکل اسی طرح بنائے اور دستاویزی کیے گئے جیسے کسی ٹیم کو سونپے جاتے ہیں۔',
+      subtitle: 'اس صفحے کے پیچھے موجود ٹوکنز اور کمپوننٹس, بالکل اسی طرح بنائے اور دستاویزی کیے گئے جیسے کسی ٹیم کو سونپے جاتے ہیں۔',
       color: 'رنگ',
       type: 'ٹائپ',
       buttons: 'بٹنز',
